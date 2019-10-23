@@ -1,9 +1,8 @@
-﻿using System;
-using System.Reflection;
+﻿using System.Reflection;
 
 namespace Vsite.CSharp.TipoviOperatori
 {
-    class Program
+    static class Program
     {
         static void Main()
         {

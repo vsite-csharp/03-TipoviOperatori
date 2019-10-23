@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Vsite.CSharp.TipoviOperatori
+﻿namespace Vsite.CSharp.TipoviOperatori
 {
     class Osoba
     {
@@ -19,7 +17,7 @@ namespace Vsite.CSharp.TipoviOperatori
     }
 
 
-    class Program
+    static class Program
     {
         static void Main()
         {
