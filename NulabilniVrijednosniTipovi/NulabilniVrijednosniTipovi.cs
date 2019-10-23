@@ -2,7 +2,7 @@
 
 namespace Vsite.CSharp.TipoviOperatori
 {
-    class Program
+    static class Program
     {
         static void Main()
         {

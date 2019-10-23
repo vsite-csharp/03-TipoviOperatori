@@ -1,12 +1,10 @@
-﻿using System;
-
-namespace Vsite.CSharp.TipoviOperatori
+﻿namespace Vsite.CSharp.TipoviOperatori
 {
     class Osoba { }
 
     class Student : Osoba { }
 
-    class Program
+    static class Program
     {
         static void Main()
         {
