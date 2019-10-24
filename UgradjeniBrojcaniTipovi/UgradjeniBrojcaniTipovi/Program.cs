@@ -6,26 +6,44 @@ namespace Vsite.Csharp.TipoviOperatori
     {
         static void Main(string[] args)
         {
-            // TODO:030 Ispisati najveći i najmanji broj koji se može pohraniti u tip int.
             Console.WriteLine(int.MaxValue);
+            Console.WriteLine(int.MinValue);
 
-            // TODO:031 Deklarirati varijablu tipa int i dodijeliti joj vrijednost int.MaxValue. Ispisati vrijednost varijable uvećane za 1.
+            int b = int.MaxValue;
+            Console.WriteLine(b + 1);
 
-            // TODO:032 Deklarirati varijablu tipa int i dodijeliti joj vrijednost int.MinValue. Ispisati vrijednost varijable umanjenu za 1.
+            int c = int.MinValue;
+            Console.WriteLine(c - 1);
 
-            // TODO:033 Ispisati granične vrijednosti za tip double.
+            Console.WriteLine(double.MaxValue + " - " + double.MinValue);
 
-            // TODO:034 Provjeriti što će se ispisati kao rezultat dijeljenja pozitivnog broja tipa double s 0 te dijeljenja negativnog broja tipa double s 0.
+            Console.WriteLine( 0.4 / 0); // inf
+            Console.WriteLine( -1.2 / 0); // -inf
 
-            // TODO:035 Provjeriti što će se ispisati kao rezultat kada se varijabla tipa double s vrijednošću 0 podijeli s 0.
+            Console.WriteLine(0.0 / 0); // NaN
 
-            // TODO:036 Definirati varijablu tipa double i pridružiti joj vrijednost 5.
+            double d = 5;
 
-            // TODO:037 Dvjema varijablama tipa int pridružiti vrijednost prethodno definirane varijable, odnosno najvećeg broja tipa double i ispisati njihove vrijednosti.
 
-            // TODO:038 Ispisati najveće i najmanje vrijednosti tipa decimal.
+            int x, y;
+            double z = 5.7;                                                //ovo je samo proba , shift + alt
+            //x = (int)z;                                                  //ovo je samo proba , shift + alt
+            //y = (int)z;                                                  //ovo je samo proba , shift + alt
+                                                                           //ovo je samo proba , shift + alt
+            Console.WriteLine(decimal.MaxValue + " - " + decimal.MinValue);//ovo je samo proba , shift + alt
 
-            // TODO:039 Varijabli tipa double pridružiti najveću vrijednost tipa double i ispisati rezultat.
+            double doub = (double)decimal.MaxValue;
+
+            float f1, f2;
+            f1 = 1.23456789e23F;
+            f2 = 1.23456788e23F;
+
+            Console.WriteLine(f1);
+            Console.WriteLine(f2);
+
+
+
+            Console.WriteLine(doub);
 
             Console.ReadKey();
         }
