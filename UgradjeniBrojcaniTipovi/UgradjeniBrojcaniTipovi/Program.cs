@@ -7,26 +7,39 @@ namespace Vsite.Csharp.TipoviOperatori
         static void Main(string[] args)
         {
             // TODO:030 Ispisati najveći i najmanji broj koji se može pohraniti u tip int.
+            Console.WriteLine(int.MinValue);
             Console.WriteLine(int.MaxValue);
+            int a = int.MaxValue;
+            a++;
+            Console.WriteLine(a);
+           int b = int.MinValue;
+            b--;
 
-            // TODO:031 Deklarirati varijablu tipa int i dodijeliti joj vrijednost int.MaxValue. Ispisati vrijednost varijable uvećane za 1.
 
-            // TODO:032 Deklarirati varijablu tipa int i dodijeliti joj vrijednost int.MinValue. Ispisati vrijednost varijable umanjenu za 1.
+            double c = 2.3;
+            Console.WriteLine(c / 0);
+            c = - 2.3;
+            Console.WriteLine(c / 0);
 
-            // TODO:033 Ispisati granične vrijednosti za tip double.
-
-            // TODO:034 Provjeriti što će se ispisati kao rezultat dijeljenja pozitivnog broja tipa double s 0 te dijeljenja negativnog broja tipa double s 0.
-
-            // TODO:035 Provjeriti što će se ispisati kao rezultat kada se varijabla tipa double s vrijednošću 0 podijeli s 0.
-
+            c = 0;
+            Console.WriteLine(c / 0);
             // TODO:036 Definirati varijablu tipa double i pridružiti joj vrijednost 5.
 
-            // TODO:037 Dvjema varijablama tipa int pridružiti vrijednost prethodno definirane varijable, odnosno najvećeg broja tipa double i ispisati njihove vrijednosti.
+            //double d = 5;
+            //d = double.MaxValue;
+            //int e = d;
+            //Console.WriteLine(e);
+            //d = double.MinValue;
+            //e = d;
+            //Console.WriteLine(e);
+
 
             // TODO:038 Ispisati najveće i najmanje vrijednosti tipa decimal.
-
+            Console.WriteLine(decimal.MaxValue);
+            Console.WriteLine(decimal.MinValue);
             // TODO:039 Varijabli tipa double pridružiti najveću vrijednost tipa double i ispisati rezultat.
-
+            double z = double.MaxValue;
+            Console.WriteLine(z);
             Console.ReadKey();
         }
     }
