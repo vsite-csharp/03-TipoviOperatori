@@ -8,6 +8,7 @@ namespace Vsite.CSharp.TipoviOperatori
         {
             double? nulabilniDuplić = Math.PI;
             Console.WriteLine(nulabilniDuplić);
+            
 
             // TODO:050  Dodati naredbu kojom se vrijednost nulabilnog tipa double postavlja na null referencu te ispisati nakon toga sadržaj varijable.
 
