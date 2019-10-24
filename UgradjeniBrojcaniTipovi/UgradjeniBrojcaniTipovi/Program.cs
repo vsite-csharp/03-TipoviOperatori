@@ -6,26 +6,28 @@ namespace Vsite.Csharp.TipoviOperatori
     {
         static void Main(string[] args)
         {
-            // TODO:030 Ispisati najveći i najmanji broj koji se može pohraniti u tip int.
             Console.WriteLine(int.MaxValue);
+            Console.WriteLine(int.MinValue);
+            int max = int.MaxValue;
+            Console.WriteLine(++max);
+            int min = int.MinValue;
+            Console.WriteLine(--min);
+            Console.WriteLine(double.MinValue + " " + double.MaxValue);
+            Console.WriteLine(2.0 / 0);
+            Console.WriteLine(-2.0 / 0);
+            Console.WriteLine(0.0 / 0);
+            double val= 5.0;
+            int a, b; a = (int)val; b = (int)val;
+            Console.WriteLine(decimal.MinValue + " " + decimal.MinValue);
+            double dbr = (double)decimal.MaxValue;
 
-            // TODO:031 Deklarirati varijablu tipa int i dodijeliti joj vrijednost int.MaxValue. Ispisati vrijednost varijable uvećane za 1.
+            float f1 = 1.23456789e23F;
+            float f2 = 1.23456788e23F;
+            Console.WriteLine(f1 - f2);
 
-            // TODO:032 Deklarirati varijablu tipa int i dodijeliti joj vrijednost int.MinValue. Ispisati vrijednost varijable umanjenu za 1.
-
-            // TODO:033 Ispisati granične vrijednosti za tip double.
-
-            // TODO:034 Provjeriti što će se ispisati kao rezultat dijeljenja pozitivnog broja tipa double s 0 te dijeljenja negativnog broja tipa double s 0.
-
-            // TODO:035 Provjeriti što će se ispisati kao rezultat kada se varijabla tipa double s vrijednošću 0 podijeli s 0.
-
-            // TODO:036 Definirati varijablu tipa double i pridružiti joj vrijednost 5.
-
-            // TODO:037 Dvjema varijablama tipa int pridružiti vrijednost prethodno definirane varijable, odnosno najvećeg broja tipa double i ispisati njihove vrijednosti.
-
-            // TODO:038 Ispisati najveće i najmanje vrijednosti tipa decimal.
-
-            // TODO:039 Varijabli tipa double pridružiti najveću vrijednost tipa double i ispisati rezultat.
+            double d1 = 1.23456789e23;
+            double d2 = 1.23456788e23;
+            Console.WriteLine(d1 - d2);
 
             Console.ReadKey();
         }
