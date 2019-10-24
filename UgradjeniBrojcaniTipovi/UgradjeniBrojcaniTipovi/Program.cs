@@ -6,27 +6,36 @@ namespace Vsite.Csharp.TipoviOperatori
     {
         static void Main(string[] args)
         {
-            // TODO:030 Ispisati najveći i najmanji broj koji se može pohraniti u tip int.
             Console.WriteLine(int.MaxValue);
+            Console.WriteLine(int.MinValue);
 
-            // TODO:031 Deklarirati varijablu tipa int i dodijeliti joj vrijednost int.MaxValue. Ispisati vrijednost varijable uvećane za 1.
+            int veliki = int.MaxValue;
+            Console.WriteLine(++veliki);
 
-            // TODO:032 Deklarirati varijablu tipa int i dodijeliti joj vrijednost int.MinValue. Ispisati vrijednost varijable umanjenu za 1.
+            int mali = int.MinValue;
+            Console.WriteLine(--mali);
 
-            // TODO:033 Ispisati granične vrijednosti za tip double.
+            Console.WriteLine(double.MaxValue);
+            Console.WriteLine(double.MinValue);
 
-            // TODO:034 Provjeriti što će se ispisati kao rezultat dijeljenja pozitivnog broja tipa double s 0 te dijeljenja negativnog broja tipa double s 0.
+            double a = 3.0;
+            Console.WriteLine(a / 0);
 
-            // TODO:035 Provjeriti što će se ispisati kao rezultat kada se varijabla tipa double s vrijednošću 0 podijeli s 0.
+            double nula =0.0;
+            Console.WriteLine(nula / 0);
 
-            // TODO:036 Definirati varijablu tipa double i pridružiti joj vrijednost 5.
+            double b= 5.0;
+            int c = (int)b;
 
-            // TODO:037 Dvjema varijablama tipa int pridružiti vrijednost prethodno definirane varijable, odnosno najvećeg broja tipa double i ispisati njihove vrijednosti.
+            Console.WriteLine(decimal.MaxValue);
+            Console.WriteLine(decimal.MinValue);
 
-            // TODO:038 Ispisati najveće i najmanje vrijednosti tipa decimal.
+            double d =(double)decimal.MaxValue;
 
-            // TODO:039 Varijabli tipa double pridružiti najveću vrijednost tipa double i ispisati rezultat.
+            float f1 = 1.23456789e23F;
+            float f2 = 1.23456788e23F;
 
+            Console.WriteLine(f1-f2);
             Console.ReadKey();
         }
     }
