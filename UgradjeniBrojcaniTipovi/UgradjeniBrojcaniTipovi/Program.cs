@@ -6,26 +6,32 @@ namespace Vsite.Csharp.TipoviOperatori
     {
         static void Main(string[] args)
         {
-            // TODO:030 Ispisati najveći i najmanji broj koji se može pohraniti u tip int.
             Console.WriteLine(int.MaxValue);
+            Console.WriteLine(int.MinValue);
+            int i = int.MaxValue;
+            Console.WriteLine(++i);
+            int j = int.MinValue;
+            Console.WriteLine(--j);
+            Console.WriteLine(double.MaxValue);
+            Console.WriteLine(double.MinValue);
+            
+            Console.WriteLine(3.0 / 0);
+            Console.WriteLine(-3.0 / 0);
+            Console.WriteLine(0.0 / 0);
+            double b = 5.0;
+            int c = (int)b;
+            decimal d1 = decimal.MaxValue;
+            Console.WriteLine(d1);
+            decimal d2 = decimal.MinValue;
+            Console.WriteLine(d2);
 
-            // TODO:031 Deklarirati varijablu tipa int i dodijeliti joj vrijednost int.MaxValue. Ispisati vrijednost varijable uvećane za 1.
+            double dd1 = (double)decimal.MaxValue;
 
-            // TODO:032 Deklarirati varijablu tipa int i dodijeliti joj vrijednost int.MinValue. Ispisati vrijednost varijable umanjenu za 1.
+            double f1 = 1.23456789e23;
+            double f2 = 1.23456788e23;
 
-            // TODO:033 Ispisati granične vrijednosti za tip double.
+            Console.WriteLine(f1-f2);
 
-            // TODO:034 Provjeriti što će se ispisati kao rezultat dijeljenja pozitivnog broja tipa double s 0 te dijeljenja negativnog broja tipa double s 0.
-
-            // TODO:035 Provjeriti što će se ispisati kao rezultat kada se varijabla tipa double s vrijednošću 0 podijeli s 0.
-
-            // TODO:036 Definirati varijablu tipa double i pridružiti joj vrijednost 5.
-
-            // TODO:037 Dvjema varijablama tipa int pridružiti vrijednost prethodno definirane varijable, odnosno najvećeg broja tipa double i ispisati njihove vrijednosti.
-
-            // TODO:038 Ispisati najveće i najmanje vrijednosti tipa decimal.
-
-            // TODO:039 Varijabli tipa double pridružiti najveću vrijednost tipa double i ispisati rezultat.
 
             Console.ReadKey();
         }
