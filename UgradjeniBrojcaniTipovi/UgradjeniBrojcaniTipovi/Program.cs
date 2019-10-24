@@ -6,27 +6,53 @@ namespace Vsite.Csharp.TipoviOperatori
     {
         static void Main(string[] args)
         {
-            // TODO:030 Ispisati najveći i najmanji broj koji se može pohraniti u tip int.
+            
             Console.WriteLine(int.MaxValue);
+            Console.WriteLine(int.MinValue);
 
-            // TODO:031 Deklarirati varijablu tipa int i dodijeliti joj vrijednost int.MaxValue. Ispisati vrijednost varijable uvećane za 1.
+            //int a = int.Parse("two");   //neće
+            int a = int.Parse("12");    //da
 
-            // TODO:032 Deklarirati varijablu tipa int i dodijeliti joj vrijednost int.MinValue. Ispisati vrijednost varijable umanjenu za 1.
+            
+            int veliki = int.MaxValue;
+            Console.WriteLine(++veliki);
+            
+            int mali = int.MinValue;
+            Console.WriteLine(--mali);
+           
+            Console.WriteLine(double.MaxValue);
+            Console.WriteLine(double.MinValue);
+            
+            double aDouble=3.0;  //potrebno staviti . ili .0
+            Console.WriteLine(aDouble / 0); //beskonačno
+            //Console.WriteLine(mali / 0);    //OPREZ: za int....Unhandled Exception:
+            Console.WriteLine(aDouble / -1);    //-3
 
-            // TODO:033 Ispisati granične vrijednosti za tip double.
+            
+            aDouble = 0;
+            Console.WriteLine(aDouble / 0);     //NaN
+            
 
-            // TODO:034 Provjeriti što će se ispisati kao rezultat dijeljenja pozitivnog broja tipa double s 0 te dijeljenja negativnog broja tipa double s 0.
+            double b = 5.0;
 
-            // TODO:035 Provjeriti što će se ispisati kao rezultat kada se varijabla tipa double s vrijednošću 0 podijeli s 0.
+            
+            //int c = b;        //NE ide jer kompajler sprječava preljev koji bi omogućio gubitak podataka 
+            int c =(int) b;     //castamo
+                             
+            Console.WriteLine(decimal.MaxValue);
+            Console.WriteLine(decimal.MinValue);
+            
+            //double bDouble =decimal.MaxValue;     //greška....stvar je u preciznosti pa nas kompajler upozorava
+            double bDouble = (double)decimal.MaxValue;
 
-            // TODO:036 Definirati varijablu tipa double i pridružiti joj vrijednost 5.
+            float f1 = 1.23456789e23F;  //staviti F za razliku double i float-a
+            float f2 = 1.2345678988e23F;
 
-            // TODO:037 Dvjema varijablama tipa int pridružiti vrijednost prethodno definirane varijable, odnosno najvećeg broja tipa double i ispisati njihove vrijednosti.
+            double f3 = 1.23456789e23F;  //staviti F za razliku double i float-a
+            double f4 = 1.2345678988e23F;
 
-            // TODO:038 Ispisati najveće i najmanje vrijednosti tipa decimal.
-
-            // TODO:039 Varijabli tipa double pridružiti najveću vrijednost tipa double i ispisati rezultat.
-
+            Console.WriteLine(f1 - f2);     //dobijemo: 0....jer float pamti 7 znamenaka pa zbog viška odreže i da 0
+            Console.WriteLine(f3 - f4);
             Console.ReadKey();
         }
     }
