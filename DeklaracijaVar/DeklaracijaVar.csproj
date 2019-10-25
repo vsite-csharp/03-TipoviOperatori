@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5CBC99CB-A552-4A8D-B51B-DAE008654988}</ProjectGuid>
+    <ProjectGuid>{F5D199E4-F98E-428D-A829-5CCE1B69E41F}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Vsite.Csharp.TipoviOperatori</RootNamespace>
-    <AssemblyName>UgradjeniBrojcaniTipovi</AssemblyName>
+    <RootNamespace>Vsite.CSharp.TipoviOperatori</RootNamespace>
+    <AssemblyName>DeklaracijaVar</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -35,7 +35,7 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="DeklaracijaVar.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

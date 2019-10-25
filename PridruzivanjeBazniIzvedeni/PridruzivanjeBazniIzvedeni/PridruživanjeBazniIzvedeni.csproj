@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{E829D863-127E-453C-9C5E-ADC9670EE730}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Vsite.Csharp.TipoviOperatori</RootNamespace>
+    <RootNamespace>Vsite.CSharp.TipoviOperatori</RootNamespace>
     <AssemblyName>PridruzivanjeBazniIzvedeni</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -35,7 +35,7 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="PridruživanjeBazniIzvedeni.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

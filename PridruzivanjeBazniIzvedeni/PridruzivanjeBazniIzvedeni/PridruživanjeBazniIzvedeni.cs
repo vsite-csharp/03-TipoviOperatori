@@ -20,7 +20,7 @@ namespace Vsite.CSharp.TipoviOperatori
 
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             // TODO:070 Dodajte pozive svih mogućih metoda nad instancama objekata osoba, student i osobaStudent.
             Osoba osoba = new Osoba();
