@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Vsite.Csharp.TipoviOperatori
+namespace Vsite.CSharp.TipoviOperatori
 {
     class Osoba
     {
@@ -29,7 +29,7 @@ namespace Vsite.Csharp.TipoviOperatori
 
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             // TODO:080 Provjeriti za koja pridruživanja se smije  staviti operator pretvorbe da prevoditelj ne bi prijavio pogrešku a da pri izvođenju ne bude bačena iznimka.
             Osoba osoba = new Osoba();

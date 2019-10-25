@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{C8490AEE-118D-4885-A48E-E9A3CEEE2C71}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Vsite.Csharp.TipoviOperatori</RootNamespace>
+    <RootNamespace>Vsite.CSharp.TipoviOperatori</RootNamespace>
     <AssemblyName>OperatorTypeof</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -35,7 +35,7 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="OperatorTypeof.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

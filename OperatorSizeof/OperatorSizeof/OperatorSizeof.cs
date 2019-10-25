@@ -32,17 +32,17 @@ namespace Vsite.CSharp.TipoviOperatori
 
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            // TODO:110 Napisati naredbu kojom će se ispisati duljina podatka tipa decimal 
+            // TODO:120 Napisati naredbu kojom će se ispisati duljina podatka tipa decimal 
 
-            // TODO:111 Napisati naredbu kojom će se ispisati duljina podatka tipa double 
+            // TODO:121 Napisati naredbu kojom će se ispisati duljina podatka tipa double 
 
-            // TODO:112 Ispisati duljinu tipa MojaStruktura
+            // TODO:122 Ispisati duljinu tipa MojaStruktura
 
-            // TODO:113 Ispisati duljinu tipa MojaSloženaStruktura
+            // TODO:123 Ispisati duljinu tipa MojaSloženaStruktura
 
-            // TODO:114 Ispisati duljinu tipa MojaKlasa
+            // TODO:124 Ispisati duljinu tipa MojaKlasa
 
 
             Console.ReadKey();

@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0E4694E7-B5C0-4479-9E94-C0063782BF4C}</ProjectGuid>
+    <ProjectGuid>{5CBC99CB-A552-4A8D-B51B-DAE008654988}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Vsite.CSharp.TipoviOperatori</RootNamespace>
-    <AssemblyName>UgradjeniTipoviIL</AssemblyName>
+    <AssemblyName>UgradjeniCjelobrojniTipovi</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -35,7 +35,7 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UgrađeniTipoviIL.cs" />
+    <Compile Include="UgrađeniCjelobrojniTipovi.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

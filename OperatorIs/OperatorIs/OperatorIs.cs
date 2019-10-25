@@ -8,13 +8,13 @@ namespace Vsite.CSharp.TipoviOperatori
 
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            // TODO:090 Dodajte provjere za objekt osoba je li tipa Osoba i tipa Student.
+            // TODO:100 Dodajte provjere za objekt osoba je li tipa Osoba i tipa Student.
             Osoba osoba = new Osoba();
 
 
-            // TODO:091 Dodajte provjere za objekt janko je li tipa Osoba i tipa Student.
+            // TODO:101 Dodajte provjere za objekt janko je li tipa Osoba i tipa Student.
             Osoba janko = new Student();
 
 
