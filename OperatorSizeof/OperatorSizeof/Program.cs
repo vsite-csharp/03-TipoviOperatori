@@ -34,6 +34,7 @@ namespace Vsite.CSharp.TipoviOperatori
     {
         static void Main(string[] args)
         {
+           
             Console.WriteLine(sizeof(decimal));
 
             Console.WriteLine(sizeof(double));
