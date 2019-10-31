@@ -17,11 +17,9 @@ namespace Vsite.Csharp.TipoviOperatori
 
             Console.WriteLine(double.MaxValue);
             Console.WriteLine(double.MinValue);
-            // TODO:034 Provjeriti što će se ispisati kao rezultat dijeljenja pozitivnog broja tipa double s 0 te dijeljenja negativnog broja tipa double s 0.
             double a = 3.0;
             Console.WriteLine(a / 0);
 
-            // TODO:035 Provjeriti što će se ispisati kao rezultat kada se varijabla tipa double s vrijednošću 0 podijeli s 0.
             a = 0.0;
             Console.WriteLine(a / 0);
 
