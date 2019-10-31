@@ -12,15 +12,18 @@ namespace Vsite.CSharp.TipoviOperatori
     {
         static void Main()
         {
-            // TODO:100 Pokrenuti program i provjeriti što će se ispisati te koja će iznimka biti bačena.
+            
+//            Bacena iznimka!
+//Unable to cast object of type 'Vsite.CSharp.TipoviOperatori.Student' to type 'Vsite.CSharp.TipoviOperatori.Radnik'.
             Osoba janko = new Student();
+
             Student jankoStudent = janko as Student;
             if (jankoStudent != null)
-                Console.WriteLine(jankoStudent);
+                Console.WriteLine(jankoStudent); //Vsite.CSharp.TipoviOperatori.Student
             else
                 Console.WriteLine("null");
 
-            Radnik jankoSljaker = janko as Radnik;
+            Radnik jankoSljaker = janko as Radnik;  //null
             if (jankoSljaker != null)
                 Console.WriteLine(jankoSljaker);
             else
@@ -39,7 +42,7 @@ namespace Vsite.CSharp.TipoviOperatori
             Console.ReadKey();
         }
 
-        // TODO:101 Pogledati donje pretvorbe i razjasniti razliku.
+
 
         // ovo je česti način pisanja kada želimo napraviti "sigurnu" pretvorbu:
         static void Pretvorba1()
@@ -62,6 +65,7 @@ namespace Vsite.CSharp.TipoviOperatori
             Student studentJanko = janko as Student;
             if (studentJanko != null)
             {
+                
             }
         }
     }
