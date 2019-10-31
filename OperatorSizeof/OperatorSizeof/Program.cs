@@ -39,11 +39,11 @@ namespace Vsite.CSharp.TipoviOperatori
             
             Console.WriteLine(sizeof(double));
 
-            unsafe
+            /* unsafe
             {
                 Console.WriteLine(sizeof(MojaStruktura));
                 Console.WriteLine(sizeof(MojaSloženaStruktura));
-            }
+            }*/
 
            //Console.WriteLine(sizeof(MojaKlasa));
 
