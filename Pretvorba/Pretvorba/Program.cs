@@ -31,6 +31,7 @@ namespace Vsite.Csharp.TipoviOperatori
     {
         static void Main(string[] args)
         {
+            //Domaća zadaća
             // TODO:080 Provjeriti za koja pridruživanja se smije  staviti operator pretvorbe da prevoditelj ne bi prijavio pogrešku a da pri izvođenju ne bude bačena iznimka.
             Osoba osoba = new Osoba();
             Student student = new Student();

@@ -32,7 +32,7 @@ namespace Vsite.CSharp.TipoviOperatori
             student.PoložiIspit("Bate podataka");
             Osoba osobaStudent = new Student();
             osobaStudent.DajOib();
-            // TODO:071 Deklarirajte objekt tipa Student i pokušajte ga instancirati pozivom konstruktora tipa Osoba. Provjerite što prevoditelj javlja.
+            
             ((Student)osobaStudent).PoložiIspit("Fizika");  //ne preporučuje se...eksplicitni cast je riskantan!
                                                             // ((Student)osoba).PoložiIspit("Fizika"); //System.InvalidCastException
             //Student studentKaoOsoba = new Osoba(); ..bazni tip ne možeš u izvedeni jedino castom ali na vlastitu odgovornost!
