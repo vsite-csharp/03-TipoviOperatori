@@ -6,7 +6,6 @@ namespace Vsite.Csharp.TipoviOperatori
     {
         static void Main(string[] args)
         {
-            // TODO:030 Ispisati najveći i najmanji broj koji se može pohraniti u tip int.
             Console.WriteLine(int.MinValue);
             Console.WriteLine(int.MaxValue);
             int a = int.MaxValue;
@@ -23,7 +22,6 @@ namespace Vsite.Csharp.TipoviOperatori
 
             c = 0;
             Console.WriteLine(c / 0);
-            // TODO:036 Definirati varijablu tipa double i pridružiti joj vrijednost 5.
 
             //double d = 5;
             //d = double.MaxValue;
@@ -34,10 +32,8 @@ namespace Vsite.Csharp.TipoviOperatori
             //Console.WriteLine(e);
 
 
-            // TODO:038 Ispisati najveće i najmanje vrijednosti tipa decimal.
             Console.WriteLine(decimal.MaxValue);
             Console.WriteLine(decimal.MinValue);
-            // TODO:039 Varijabli tipa double pridružiti najveću vrijednost tipa double i ispisati rezultat.
             double z = double.MaxValue;
             Console.WriteLine(z);
             Console.ReadKey();
