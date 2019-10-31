@@ -18,11 +18,11 @@ namespace Vsite.CSharp.TipoviOperatori
 
             //običniDuplić = null
 
-            // TODO:052 Definirati nulabilnu varijablu korištenjem generičkog tipa Nullable<T>, postaviti vrijednost na nul-referencu i ispisati sadržaj.
+            
             Nullable<int> nulabilniInt = null;
             Console.WriteLine(nulabilniInt);
 
-            // TODO:053 Postaviti vrijednost gornje varijable na konačnu vrijednost te ispisati sadržaj.
+            
             nulabilniInt = 314;
             Console.WriteLine(nulabilniInt);
 
