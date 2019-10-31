@@ -22,7 +22,6 @@ namespace Vsite.CSharp.TipoviOperatori
     {
         static void Main(string[] args)
         {
-            // TODO:070 Dodajte pozive svih mogućih metoda nad instancama objekata osoba, student i osobaStudent.
             Osoba osoba = new Osoba();
             osoba.DajOib();
             Student student = new Student();
