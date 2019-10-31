@@ -22,15 +22,22 @@ namespace Vsite.CSharp.TipoviOperatori
     {
         static void Main(string[] args)
         {
-            // TODO:070 Dodajte pozive svih mogućih metoda nad instancama objekata osoba, student i osobaStudent.
+            // Dodajte pozive svih mogućih metoda nad instancama objekata osoba, student i osobaStudent.
             Osoba osoba = new Osoba();
+            osoba.DajOib();
 
             Student student = new Student();
+            student.DajOib();
+            student.PoložiIspit("KRIP");
 
             Osoba osobaStudent = new Student();
+            osobaStudent.DajOib();
+            ((Student)osobaStudent).PoložiIspit("Etika poslovanja");
+            //((Student)osoba).PoložiIspit("Etika poslovanja");
 
-            // TODO:071 Deklarirajte objekt tipa Student i pokušajte ga instancirati pozivom konstruktora tipa Osoba. Provjerite što prevoditelj javlja.
-
+            // Deklarirajte objekt tipa Student i pokušajte ga instancirati pozivom konstruktora tipa Osoba. Provjerite što prevoditelj javlja.
+            //Student studentKaoOsoba = new Osoba();
+            //studentKaoOsoba.PoložiIspit();
 
             Console.ReadKey();
         }
