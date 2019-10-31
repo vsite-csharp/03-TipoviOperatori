@@ -18,7 +18,7 @@ namespace Vsite.CSharp.TipoviOperatori
 
             int i1 = 12;
             double d1 = 3.14;
-            // DOMACA ZADACA
+            // TODO:064 DOMACA ZADACA
             // TODO:065 Prevesti kod i usporediti kod naredbi za inicijalizacije varijabli i0 i d0, odnosno i1 i d1 pomoću ILDasm-a.
 
             // TODO:066 Deklarirati varijablu "s" tipa var i inicijalizirati ju pozivom konstruktora strukture S definirane gore.
