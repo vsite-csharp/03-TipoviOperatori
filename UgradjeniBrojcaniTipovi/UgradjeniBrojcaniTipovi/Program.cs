@@ -6,7 +6,6 @@ namespace Vsite.Csharp.TipoviOperatori
     {
         static void Main(string[] args)
         {
-            // TODO:030 Ispisati najveći i najmanji broj koji se može pohraniti u tip int.
             Console.WriteLine(int.MaxValue);
             Console.WriteLine(int.MinValue);
 
