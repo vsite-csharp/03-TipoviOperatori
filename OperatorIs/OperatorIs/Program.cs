@@ -12,11 +12,17 @@ namespace Vsite.CSharp.TipoviOperatori
         {
             // TODO:090 Dodajte provjere za objekt osoba je li tipa Osoba i tipa Student.
             Osoba osoba = new Osoba();
-
+            Console.WriteLine(osoba is Osoba);
+            Console.WriteLine(osoba is Osoba);
 
             // TODO:091 Dodajte provjere za objekt janko je li tipa Osoba i tipa Student.
             Osoba janko = new Student();
+            Console.WriteLine(janko is Osoba);
+            Console.WriteLine(janko is Osoba);
 
+            Student ivan = new Student;
+            Console.WriteLine(osoba is Osoba);
+            Console.WriteLine(osoba is Osoba);
 
             Console.ReadKey();
         }
