@@ -47,10 +47,10 @@ namespace Vsite.CSharp.TipoviOperatori
 
                 // Ispisati duljinu tipa MojaSloženaStruktura
                 Console.WriteLine(sizeof(MojaSloženaStruktura));
-
+            }
                 //  Ispisati duljinu tipa MojaKlasa
                 //Console.WriteLine(sizeof(MojaKlasa));
-            }
+            
             Console.ReadKey();
         }
     }
