@@ -22,7 +22,6 @@ namespace Vsite.CSharp.TipoviOperatori
     {
         static void Main(string[] args)
         {
-            // TODO:070 Dodajte pozive svih mogućih metoda nad instancama objekata osoba, student i osobaStudent.
             Osoba osoba = new Osoba();
             osoba.DajOib();
             Student student = new Student();
@@ -33,10 +32,6 @@ namespace Vsite.CSharp.TipoviOperatori
             ((Student)osobaStudent).PoložiIspit("Fizika");
             //((Student)osoba).PoložiIspit("Fizika");
             //Student studentOsoba = new Osoba();
-
-
-            // TODO:071 Deklarirajte objekt tipa Student i pokušajte ga instancirati pozivom konstruktora tipa Osoba. Provjerite što prevoditelj javlja.
-
 
             Console.ReadKey();
         }
