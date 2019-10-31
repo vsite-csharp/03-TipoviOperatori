@@ -16,7 +16,7 @@ namespace Vsite.CSharp.TipoviOperatori
             {
                 Console.WriteLine($"{mi.Name} {mi.MemberType.ToString()}");
             }
-
+            //release
 
             // TODO:122 Dodati petlju koja će za svaki član kojeg vrati metoda GetMethods ispisati ime metode i povratni tip.
 
