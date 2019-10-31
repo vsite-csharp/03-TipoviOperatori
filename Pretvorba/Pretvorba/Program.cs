@@ -48,10 +48,12 @@ namespace Vsite.Csharp.TipoviOperatori
             // nuklFiz = osobaNuklFiz;
 
             // TODO:083 Dodati sve moguće pozive metoda za objekt student
-
+            //student.Hodaj();
+            //student.PoložiIspit();
 
             // TODO:084 Dodati sve moguće pozive metoda za objekt nuklFiz
-
+            //nuklFiz.Hodaj();
+            //nuklFiz.NapraviBombu();
 
             Osoba osobaS = student;
             // TODO:085 Dodati sve moguće pozive metoda za osobaS
