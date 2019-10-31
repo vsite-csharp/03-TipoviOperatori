@@ -21,6 +21,10 @@ namespace Vsite.CSharp.TipoviOperatori
 			Console.WriteLine(janko is Osoba);
 			Console.WriteLine(janko is Student);
 
+			Student ivan = new Student();
+			Console.WriteLine(ivan is Osoba);
+			Console.WriteLine(ivan is Student);
+
 			Console.ReadKey();
         }
     }
