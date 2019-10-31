@@ -34,17 +34,22 @@ namespace Vsite.CSharp.TipoviOperatori
     {
         static void Main(string[] args)
         {
-            // TODO:110 Napisati naredbu kojom će se ispisati duljina podatka tipa decimal 
+         
 
-            // TODO:111 Napisati naredbu kojom će se ispisati duljina podatka tipa double 
+            Console.WriteLine(sizeof(decimal)); //16
+            
+            Console.WriteLine(sizeof(double));
+            
+            unsafe
+            {
+                Console.WriteLine(sizeof(MojaStruktura));//allow unsafe
+                Console.WriteLine(sizeof(MojaSloženaStruktura));
+            }
 
-            // TODO:112 Ispisati duljinu tipa MojaStruktura
-
-            // TODO:113 Ispisati duljinu tipa MojaSloženaStruktura
-
-            // TODO:114 Ispisati duljinu tipa MojaKlasa
-
-
+            
+            //ctr+shift+v
+            //Console.WriteLine(sizeof(MojaKlasa));...neće jer je referentni tip i neće moći izračunati; ne zna pravu veličinu klase; nema smisla
+           
             Console.ReadKey();
         }
     }
