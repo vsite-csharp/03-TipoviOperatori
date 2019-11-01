@@ -31,34 +31,74 @@ namespace Vsite.Csharp.TipoviOperatori
     {
         static void Main(string[] args)
         {
-            // TODO:080 Provjeriti za koja pridruživanja se smije  staviti operator pretvorbe da prevoditelj ne bi prijavio pogrešku a da pri izvođenju ne bude bačena iznimka.
             Osoba osoba = new Osoba();
+            Osoba osoba2 = new Student();
+            Osoba osoba3 = new NuklearniFizičar();
             Student student = new Student();
+            //Student student2 = (Student) new Osoba();
+            //Student student3 = (Student) (Osoba) new NuklearniFizičar();
             NuklearniFizičar nuklFiz = new NuklearniFizičar();
+            //NuklearniFizičar nuklFiz2 = (NuklearniFizičar) new Osoba();
+            //NuklearniFizičar nuklFiz3 = (NuklearniFizičar) (Osoba) new Student();
 
             Osoba osobaStudent = new Student();
             Osoba osobaNuklFiz = new NuklearniFizičar();
 
-            // TODO:081 Provjeriti koja su od donjih pridruživanja dozvoljena.
             osobaStudent = student;
             osobaNuklFiz = nuklFiz;
 
-            // TODO:082 Otkomentirati donje naredbe i provjeriti jesu li dozvoljene.
-            // student = osobaStudent;
-            // nuklFiz = osobaNuklFiz;
+            ((Student)osobaStudent).PoložiIspit();
+            ((NuklearniFizičar)osobaNuklFiz).NapraviBombu();
 
-            // TODO:083 Dodati sve moguće pozive metoda za objekt student
+            student = (Student) osobaStudent;
+            nuklFiz = (NuklearniFizičar) osobaNuklFiz;
+
+            student.PoložiIspit();
+            nuklFiz.NapraviBombu();
 
 
-            // TODO:084 Dodati sve moguće pozive metoda za objekt nuklFiz
+            Console.WriteLine("\nStudent\n----------------");
+            Student s1 = new Student();
+
+            Console.WriteLine(s1.Equals(student));
+            s1.GetHashCode();
+            s1.GetType();
+            s1.Hodaj();
+            s1.PoložiIspit();
+            s1.ToString();
 
 
+            Console.WriteLine("\nFizičar\n----------------");
+            NuklearniFizičar n1 = new NuklearniFizičar();
+
+            Console.WriteLine(n1.Equals(nuklFiz));
+            n1.GetHashCode();
+            n1.GetType();
+            n1.Hodaj();
+            n1.NapraviBombu();
+            n1.ToString();
+
+            Console.WriteLine("\nosobaS\n----------------");
             Osoba osobaS = student;
-            // TODO:085 Dodati sve moguće pozive metoda za osobaS
 
+            Console.WriteLine(osobaS.Equals(student));
+            osobaS.GetHashCode();
+            osobaS.GetType();
+            osobaS.Hodaj();
+            osobaS.ToString();
+            ((Student)osobaS).PoložiIspit();
 
-            // TODO:086 Otkomenitari donju naredbu i dodati sve moguće pozive metoda za sos.
-            // Student sos = osobaS;
+            Console.WriteLine("\nsos\n----------------");
+            Student sos = (Student)osobaS;
+
+            Console.WriteLine(sos.Equals(student));
+            sos.GetHashCode();
+            sos.GetType();
+            sos.Hodaj();
+            sos.PoložiIspit();
+            sos.ToString();
+
+            Console.WriteLine();
 
 
             Osoba osobaA = osobaNuklFiz;
@@ -67,7 +107,7 @@ namespace Vsite.Csharp.TipoviOperatori
             nuklFiz.NapraviBombu();
 
             osobaA = osoba;
-            nuklFiz = (NuklearniFizičar)osobaA;
+            //nuklFiz = (NuklearniFizičar)osobaA;
             nuklFiz.Hodaj();
             nuklFiz.NapraviBombu();
 
