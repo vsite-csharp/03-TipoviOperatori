@@ -20,7 +20,7 @@ namespace Vsite.CSharp.TipoviOperatori
             Console.WriteLine(običniDuplić);
 
             nulabilniInt = 314;
-            Console.WriteLine(nulabilniDuplić);
+            Console.WriteLine(nulabilniInt);
             Console.ReadKey();
         }
     }
