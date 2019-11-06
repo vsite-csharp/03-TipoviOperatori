@@ -14,17 +14,16 @@ namespace Vsite.CSharp.TipoviOperatori
         {
             var i0 = 12;
             var d0 = 3.14;
-
+            
             //i0 = d0;
 
             int i1 = 12;
             double d1 = 3.14;
 
-            // TODO:065 Prevesti kod i usporediti kod naredbi za inicijalizacije varijabli i0 i d0, odnosno i1 i d1 pomoću ILDasm-a.
-            //DZ
-            // TODO:066 Deklarirati varijablu "s" tipa var i inicijalizirati ju pozivom konstruktora strukture S definirane gore.
-            //DZ
-            // TODO:067 Napisati naredbe za postavljanje vrijednosti polja a i b u toj strukturi na proizvoljne vrijednosti i provjeriti da li se kod može prevesti.
+            var s = new S();
+
+            s.a = 10;
+            s.b = 3.14;
 
 
             Console.ReadKey();
