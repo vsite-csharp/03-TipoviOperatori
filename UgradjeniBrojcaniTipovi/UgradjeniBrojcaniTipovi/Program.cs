@@ -29,8 +29,8 @@ namespace Vsite.Csharp.TipoviOperatori
             Console.WriteLine(a / 0);
 
 
-            // TODO:036 Definirati varijablu tipa double i pridružiti joj vrijednost 5.
             double b = 5.0;
+
             // TODO:037 Dvjema varijablama tipa int pridružiti vrijednost prethodno definirane varijable, odnosno najvećeg broja tipa double i ispisati njihove vrijednosti.
             int c =(int)b;
             // TODO:038 Ispisati najveće i najmanje vrijednosti tipa decimal.

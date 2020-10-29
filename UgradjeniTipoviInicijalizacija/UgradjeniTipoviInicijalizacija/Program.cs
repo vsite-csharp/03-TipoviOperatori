@@ -14,7 +14,6 @@ namespace Vsite.CSharp.TipoviOperatori
            
             //string s = new string(); //ni string ne možemo tako inicijalizirati
             string s = "pero";
-            // TODO:024 Napisati kod koji inicijalizira novu varijablu tipa string na vrijednost "string 1".
 
             Console.ReadKey();
         }
