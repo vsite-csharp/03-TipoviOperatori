@@ -16,14 +16,14 @@ namespace Vsite.CSharp.TipoviOperatori
             nulabilniDuplić = null;
             Console.WriteLine(nulabilniDuplić);
 
-            // TODO:051 Pridružiti varijabli običniDuplić vrijednost varijable nulabilniDuplić. Provjeriti što će se dogoditi.
+            // Pridružiti varijabli običniDuplić vrijednost varijable nulabilniDuplić. Provjeriti što će se dogoditi.
             //običniDuplić = (double)nulabilniDuplić;
 
-            // TODO:052 Postaviti vrijednost varijable nulabilniDuplić na konačnu vrijednost te ispisati sadržaj.
+            // Postaviti vrijednost varijable nulabilniDuplić na konačnu vrijednost te ispisati sadržaj.
             nulabilniDuplić = 10;
             Console.WriteLine(nulabilniDuplić);
 
-            // TODO:053 Ponovno pokušati pridružiti varijabli običniDuplić vrijednost varijable nulabilniDuplić.
+            // Ponovno pokušati pridružiti varijabli običniDuplić vrijednost varijable nulabilniDuplić.
             običniDuplić = (double)nulabilniDuplić;
             nulabilniDuplić = običniDuplić;
             Console.WriteLine(nulabilniDuplić);
