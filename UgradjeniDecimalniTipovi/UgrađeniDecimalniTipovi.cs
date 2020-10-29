@@ -46,7 +46,7 @@ namespace Vsite.CSharp.TipoviOperatori
             Console.WriteLine(najveci);
 
             // Primjeri neodređenih rezultata dijeljenja
-            // TODO:035 Provjeriti što će se ispisati kao rezultat dijeljenja pozitivnog broja tipa double s 0 te dijeljenja negativnog broja tipa double s 0.
+            // Provjeriti što će se ispisati kao rezultat dijeljenja pozitivnog broja tipa double s 0 te dijeljenja negativnog broja tipa double s 0.
             double a = 10;
             a /= 0.0;
             Console.WriteLine(a);
