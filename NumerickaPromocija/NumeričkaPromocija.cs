@@ -21,12 +21,12 @@ namespace Vsite.CSharp.TipoviOperatori
             Console.WriteLine(dugi);
             Console.WriteLine(najveci + dugi);
 
-            // TODO:043 Definirati jednu varijablu tipa double, zbrojiti ju s varijablom tipa int i provjeriti kakvog tipa je taj zbroj.
+            // Definirati jednu varijablu tipa double, zbrojiti ju s varijablom tipa int i provjeriti kakvog tipa je taj zbroj.
             double c = 3.14;
             int d = 4;
             Console.WriteLine(c + d);
 
-            // TODO:044 Definirati varijablu tipa decimal i ispisati zbroj s varijablom tipa double te provjeriti kakvog tipa je taj zbroj.
+            // Definirati varijablu tipa decimal i ispisati zbroj s varijablom tipa double te provjeriti kakvog tipa je taj zbroj.
             decimal dec = 3.14M; // za literale dodamo deciMal
             Console.WriteLine(dec + (decimal)c); // decimal i double da bi mogli zbrojiti, morali bi se pretvoriti u jaci tip
             // decimal ima vecu preciznost nego double, a double moze imati vecu vrijednost - nisu kompatibilni
