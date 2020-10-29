@@ -49,9 +49,9 @@ namespace Vsite.CSharp.TipoviOperatori
             double nula = 0.0;
             nula /= 0.0;
             Console.WriteLine(nula);
-            // TODO:037 Definirati varijablu tipa double i pridružiti joj vrijednost 5.
+            // Definirati varijablu tipa double i pridružiti joj vrijednost 5.
             double pet = 5;
-            // TODO:038 Varijabli tipa int pridružiti vrijednost prethodno definirane varijable i ispisati njenu vrijednost.
+            // Varijabli tipa int pridružiti vrijednost prethodno definirane varijable i ispisati njenu vrijednost.
             int c = (int)pet;
             Console.WriteLine(c);
             Console.ReadKey();
