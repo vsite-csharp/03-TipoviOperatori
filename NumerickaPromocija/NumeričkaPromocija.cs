@@ -25,7 +25,7 @@ namespace Vsite.CSharp.TipoviOperatori
             int d = 4;
             Console.WriteLine(c + d);
             Console.WriteLine(c / d);
-            // TODO:044 Definirati varijablu tipa decimal i ispisati zbroj s varijablom tipa double te provjeriti kakvog tipa je taj zbroj.
+            // Definirati varijablu tipa decimal i ispisati zbroj s varijablom tipa double te provjeriti kakvog tipa je taj zbroj.
             decimal dec = 3.14M;
             Console.WriteLine(dec + (decimal)c);
             Console.ReadKey();
