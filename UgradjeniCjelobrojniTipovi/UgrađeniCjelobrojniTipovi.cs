@@ -45,7 +45,7 @@ namespace Vsite.CSharp.TipoviOperatori
 
             // Primjer cjelobrojnog dijeljenja nulom
             // Definirati varijablu tipa int te dodati naredbu kojom se ta varijabla dijeli s nulom. Pokrenuti program i provjeriti što će se dogoditi.
-            Console.WriteLine(a / 0);
+            Console.WriteLine(a / 0); // CLS nece dozvoliti sijeljenje s 0
             Console.ReadKey();
         }
     }
