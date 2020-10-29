@@ -6,7 +6,6 @@ namespace Vsite.Csharp.TipoviOperatori
     {
         static void Main(string[] args)
         {
-            // TODO:040 Definirati dvije varijable tipa int i provjeriti kojeg tipa je njihov kvocijent. Dijeljitelj i dijeljenik odabrati tako da dijeljenje bude s ostatkom.
             int a = 10;
             int b = 3;
             Console.WriteLine(a / b);
