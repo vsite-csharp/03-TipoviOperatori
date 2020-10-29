@@ -6,18 +6,38 @@ namespace Vsite.CSharp.TipoviOperatori
     {
         static void Main()
         {
-            // TODO:020 Otkomentirati donju naredbu koja ispisuje najveći broj koji se može pohraniti u tip int.
-            // Console.WriteLine(int.MaxValue);
+            //Otkomentirati donju naredbu koja ispisuje najveći broj koji se može pohraniti u tip int.
+            Console.WriteLine(int.MaxValue);
+           
+            Console.WriteLine(long.MaxValue);
+            
 
-            // TODO:021 Dodati naredbu koja će ispisati najmanji broj koji se može pohraniti u tip int.
+            Console.WriteLine(int.MinValue);
+            Console.WriteLine(long.MinValue);
+            int a = 1;
+            long dugi = a;
+           
+            short kratki = (short)a;
 
-            // TODO:022 Deklarirati varijablu tipa int i dodijeliti joj vrijednost int.MaxValue. Ispisati vrijednost varijable uvećane za 1.
 
-            // TODO:023 Deklarirati varijablu tipa int i dodijeliti joj vrijednost int.MinValue. Ispisati vrijednost varijable umanjenu za 1.
+            int najveca = int.MaxValue;
+            ++najveca;
+            Console.WriteLine(najveca);
 
-            // TODO:024 U postavkama projekta uključiti opciju za provjeru numeričkog preljeva. Ponovno pokrenuti program i provjeriti što će se dogoditi.
 
-            // TODO:025 Definirati varijablu tipa int te dodati naredbu kojom se ta varijabla dijeli s nulom. Pokrenuti program i provjeriti što će se dogoditi.
+            int najmanja = int.MinValue;
+            --najmanja;
+            Console.WriteLine(najmanja);
+            
+            
+            
+            Console.WriteLine(a/0);
+
+
+
+
+
+
 
             Console.ReadKey();
         }
