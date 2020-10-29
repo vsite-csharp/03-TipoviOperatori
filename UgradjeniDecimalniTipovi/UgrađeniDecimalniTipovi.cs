@@ -45,17 +45,14 @@ namespace Vsite.CSharp.TipoviOperatori
             a /= 0.0;
             Console.WriteLine(a);
 
-            // TODO:036 Provjeriti što će se ispisati kao rezultat kada se varijabla tipa double s vrijednošću 0 podijeli s 0.
             double nula = 0.0;
             nula /= 0.0;
             Console.WriteLine(nula);
 
 
-            // TODO:037 Definirati varijablu tipa double i pridružiti joj vrijednost 5.
 
             double pet = 5;
 
-            // TODO:038 Varijabli tipa int pridružiti vrijednost prethodno definirane varijable i ispisati njenu vrijednost.
             int c = (int)pet;
             Console.WriteLine(c);
 
