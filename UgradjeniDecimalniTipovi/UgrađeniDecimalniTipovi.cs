@@ -10,7 +10,7 @@ namespace Vsite.CSharp.TipoviOperatori
     {
         static void Main()
         {
-            // TODO:030 Ispisati granične vrijednosti za tipove double, float i decimal.
+            // Ispisati granične vrijednosti za tipove double, float i decimal.
             Console.WriteLine(double.MaxValue);
             Console.WriteLine(double.MinValue);
 
@@ -33,7 +33,7 @@ namespace Vsite.CSharp.TipoviOperatori
             Console.WriteLine("{0:F2}", f1 - f3);
 
             // Primjer binarnog zaokruživanja na rezultat
-            // TODO:033 Definirati dvije varijable trećina1 i trećina2 tipa double s vrijednostima 1/3, odn. (1-2/3). Ispisati njihove vrijednosti te razlike (trećina1-trećina1), odn. (trećina1-tećina2).
+            // Definirati dvije varijable trećina1 i trećina2 tipa double s vrijednostima 1/3, odn. (1-2/3). Ispisati njihove vrijednosti te razlike (trećina1-trećina1), odn. (trećina1-tećina2).
             double trecina1 = 1.0 / 3;
             double trecina2 = 1 - 2.0 / 3;
             Console.WriteLine("{0:F20}",trecina1);
@@ -61,7 +61,7 @@ namespace Vsite.CSharp.TipoviOperatori
             // Definirati varijablu tipa double i pridružiti joj vrijednost 5.
             double pet = 5;
 
-            // TODO:038 Varijabli tipa int pridružiti vrijednost prethodno definirane varijable i ispisati njenu vrijednost.
+            // Varijabli tipa int pridružiti vrijednost prethodno definirane varijable i ispisati njenu vrijednost.
             int c = (int)pet;
             Console.WriteLine(c);
 
