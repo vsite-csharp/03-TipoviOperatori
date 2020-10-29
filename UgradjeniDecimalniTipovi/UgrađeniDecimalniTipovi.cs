@@ -10,7 +10,6 @@ namespace Vsite.CSharp.TipoviOperatori
     {
         static void Main()
         {
-            // TODO:030 Ispisati granične vrijednosti za tipove double, float i decimal.
             Console.WriteLine(double.MaxValue);
             Console.WriteLine(double.MinValue);
 
@@ -35,7 +34,6 @@ namespace Vsite.CSharp.TipoviOperatori
             Console.WriteLine(trecina1 - trecina2);
 
             // Primjer utjecaja ograničenog raspona na rezultat množenja/dijeljenja
-            // TODO:034 Definirati varijablu tipa double s vrijednošću double.MaxValue te ispisati rezultat njenog množenja s 2. Ponoviti to za double.MinValue.
             double najveci = double.MaxValue;
             najveci *= 2;
             Console.WriteLine(najveci);
