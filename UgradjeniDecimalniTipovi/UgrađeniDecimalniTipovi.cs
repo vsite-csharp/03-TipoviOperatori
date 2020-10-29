@@ -21,7 +21,7 @@ namespace Vsite.CSharp.TipoviOperatori
             Console.WriteLine(decimal.MinValue);
 
             // Primjer utjecaja ograničene preciznosti na rezultat oduzimanja/zbrajanja
-            // TODO:031 Definirati tri varijable f1, f2 i f3 tipa float s vrijednostima: 1234567890, 1234567990 i 9.
+            // Definirati tri varijable f1, f2 i f3 tipa float s vrijednostima: 1234567890, 1234567990 i 9.
             float f1 = 1234567890;
             float f2 = 1234567990;
             float f3 = 9;
