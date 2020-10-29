@@ -15,7 +15,7 @@ namespace Vsite.CSharp.TipoviOperatori
             Console.WriteLine(long.MinValue);
 
             // Primjeri pridruživanja cjelobrojnih varijabli različitih tipova
-            // TODO:022 Deklarirati varijablu tipa int i dodijeliti joj vrijednost 1. 
+            //  Deklarirati varijablu tipa int i dodijeliti joj vrijednost 1. 
             int a = 1;
 
             //  Deklarirati varijablu tipa long i pridružiti joj vrijednost gornje varijable tipa int.
