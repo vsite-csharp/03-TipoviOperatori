@@ -10,14 +10,6 @@ namespace Vsite.CSharp.TipoviOperatori
         }
     }
 
-    class Student : Osoba
-    {
-        public void PoložiIspit()
-        {
-            Console.WriteLine("Položio sam ispit");
-        }
-    }
-
     class NuklearniFizičar : Osoba
     {
         public void NapraviBombu()
@@ -31,45 +23,32 @@ namespace Vsite.CSharp.TipoviOperatori
     {
         static void Main()
         {
-            // TODO:080 Provjeriti za koja pridruživanja se smije  staviti operator pretvorbe da prevoditelj ne bi prijavio pogrešku a da pri izvođenju ne bude bačena iznimka.
             Osoba osoba = new Osoba();
-            Student student = new Student();
-            NuklearniFizičar nuklFiz = new NuklearniFizičar();
+            NuklearniFizičar nuklFizičar = new NuklearniFizičar();
 
-            Osoba osobaStudent = new Student();
+            // TODO:090 Dodati pozive svih mogućih metoda za objekte osoba i nuklFizičar, pokrenuti program i provjeriti rezultat izvođenja.
+
             Osoba osobaNuklFiz = new NuklearniFizičar();
 
-            // TODO:081 Provjeriti koja su od donjih pridruživanja dozvoljena.
-            osobaStudent = student;
-            osobaNuklFiz = nuklFiz;
+            // TODO:091 Dodati pozive svih mogućih metoda za objekt osobaNuklFiz, pokrenuti program i provjeriti rezultat.
 
-            // TODO:082 Otkomentirati donje naredbe i provjeriti jesu li dozvoljene.
-            // student = osobaStudent;
-            // nuklFiz = osobaNuklFiz;
+            // TODO:092 Provjeriti koja su od donjih pridruživanja dozvoljena. Modificirajte naredbe tako da prevoditelj ne prijavljuje pogreške.
+            //osobaNuklFiz = nuklFiz;
+            //nuklFizičar = osobaNuklFiz;
 
-            // TODO:083 Dodati sve moguće pozive metoda za objekt student
+            // TODO:093 Dodati naredbu koja će omogućiti da se na objektu osobaNuklFiz pozove metoda NapraviBombu, pokrenuti program i provjeriti rezultat izvođenja.
 
 
-            // TODO:084 Dodati sve moguće pozive metoda za objekt nuklFiz
+            // TODO:094 Otkomentirati donje naredbe, provjeriti prijavljuje li program pogreške, pokrenuti program i provjeriti rezultat izvođenja.
+            //Osoba novaOsoba = osobaNuklFiz;
+            //nuklFizičar = (NuklearniFizičar)novaOsoba;
+            //nuklFizičar.Hodaj();
+            //nuklFizičar.NapraviBombu();
 
-
-            Osoba osobaS = student;
-            // TODO:085 Dodati sve moguće pozive metoda za osobaS
-
-
-            // TODO:086 Otkomenitari donju naredbu i dodati sve moguće pozive metoda za sos.
-            // Student sos = osobaS;
-
-
-            Osoba osobaA = osobaNuklFiz;
-            nuklFiz = (NuklearniFizičar)osobaA;
-            nuklFiz.Hodaj();
-            nuklFiz.NapraviBombu();
-
-            osobaA = osoba;
-            nuklFiz = (NuklearniFizičar)osobaA;
-            nuklFiz.Hodaj();
-            nuklFiz.NapraviBombu();
+            //novaOsoba = osoba;
+            //nuklFizičar = (NuklearniFizičar)novaOsoba;
+            //nuklFizičar.Hodaj();
+            //nuklFizičar.NapraviBombu();
 
 
             Console.ReadKey();
