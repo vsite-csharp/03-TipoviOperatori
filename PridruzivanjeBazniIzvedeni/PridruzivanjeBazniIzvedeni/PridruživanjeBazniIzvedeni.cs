@@ -4,17 +4,17 @@ namespace Vsite.CSharp.TipoviOperatori
 {
     class Osoba
     {
-        public string DajOib()
+        public void DajOib()
         {
-            return "0123456789";
+            Console.WriteLine("0123456789");
         }
     }
 
     class Student : Osoba
     {
-        public int PoložiIspit(string predmet)
+        public void PoložiIspit(string predmet)
         {
-            return 3;
+            Console.WriteLine($"Ocjena iz predmeta {predmet} je 3");
         }
     }
 
@@ -22,14 +22,15 @@ namespace Vsite.CSharp.TipoviOperatori
     {
         static void Main()
         {
-            // TODO:070 Dodajte pozive svih mogućih metoda nad instancama objekata osoba, student i osobaStudent.
+            // TODO:080 Dodajte pozive svih mogućih metoda nad objektima osoba i student te pokrenite program.
             Osoba osoba = new Osoba();
 
             Student student = new Student();
 
+            // TODO:081 Dodajte pozive svih mogućih metoda na objektu osobaStudent te pokrenite program.
             Osoba osobaStudent = new Student();
 
-            // TODO:071 Deklarirajte objekt tipa Student i pokušajte ga instancirati pozivom konstruktora tipa Osoba. Provjerite što prevoditelj javlja.
+            // TODO:082 Pokušajte objektu student pridružiti novi objekt tipa Osoba. Provjerite što prevoditelj javlja.
 
 
             Console.ReadKey();
