@@ -39,7 +39,7 @@ namespace Vsite.CSharp.TipoviOperatori
             osobaStudent.DajOib();
             //osobaStudent.PoložiIspit("Fizika");
 
-            // TODO:082 Pokušajte objektu student pridružiti novi objekt tipa Osoba. Provjerite što prevoditelj javlja.
+            // Pokušajte objektu student pridružiti novi objekt tipa Osoba. Provjerite što prevoditelj javlja.
             
             //student = new Osoba();
             //student.PoložiIspit("Kemija");
