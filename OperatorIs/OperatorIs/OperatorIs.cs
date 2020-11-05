@@ -10,13 +10,26 @@ namespace Vsite.CSharp.TipoviOperatori
     {
         static void Main()
         {
-            // TODO:100 Dodajte provjere za objekt osoba je li tipa Osoba i tipa Student te ispišite rezultate.
+            // Dodajte provjere za objekt osoba je li tipa Osoba i tipa Student te ispišite rezultate.
             Osoba osoba = new Osoba();
-
-
+            if (osoba is Osoba)
+                Console.WriteLine("osoba je tipa Osoba");
+            else
+                Console.WriteLine("osoba NIJE tipa Osoba");
+            if (osoba is Student)
+                Console.WriteLine("osoba je tipa Student");
+            else
+                Console.WriteLine("osoba NIJE tipa Student");
             // TODO:101 Dodajte provjere za objekt janko je li tipa Osoba i tipa Student te ispišite rezultate.
             Osoba janko = new Student();
-
+            if (janko is Osoba)
+                Console.WriteLine("janko je tipa Osoba");
+            else
+                Console.WriteLine("janko NIJE tipa Osoba");
+            if (janko is Student)
+                Console.WriteLine("janko je tipa Student");
+            else
+                Console.WriteLine("janko NIJE tipa Student");
 
             Console.ReadKey();
         }
