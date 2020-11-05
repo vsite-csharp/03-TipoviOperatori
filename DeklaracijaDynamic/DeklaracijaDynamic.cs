@@ -27,7 +27,7 @@ namespace Vsite.CSharp.TipoviOperatori
             Console.WriteLine(s.a);
             Console.WriteLine(s.b);
 
-            // TODO:073 Napisati naredbu za postavljanje vrijednosti npostojećeg polja c u toj strukturi na proizvoljnu vrijednosti i provjeriti da li se kod može prevesti.
+            // Napisati naredbu za postavljanje vrijednosti npostojećeg polja c u toj strukturi na proizvoljnu vrijednosti i provjeriti da li se kod može prevesti.
             s.c = 33;
 
             // Pokrenuti program i provjeriti ispis.
