@@ -12,7 +12,7 @@ namespace Vsite.CSharp.TipoviOperatori
     {
         static void Main()
         {
-            // TODO:110 Pokrenuti program i provjeriti što će se ispisati te koja će iznimka biti bačena.
+            //  Pokrenuti program i provjeriti što će se ispisati te koja će iznimka biti bačena.
             Osoba janko = new Student();
             Student jankoStudent = janko as Student;
             if (jankoStudent != null)
@@ -20,7 +20,7 @@ namespace Vsite.CSharp.TipoviOperatori
             else
                 Console.WriteLine("null");
 
-            Radnik jankoSljaker = janko as Radnik;
+            Radnik jankoSljaker = janko as Radnik;//ne uspije
             if (jankoSljaker != null)
                 Console.WriteLine(jankoSljaker);
             else
@@ -28,7 +28,7 @@ namespace Vsite.CSharp.TipoviOperatori
 
             try
             {
-                jankoSljaker = (Radnik)janko;
+                jankoSljaker = (Radnik)janko;//nije dozvoljeni cash
             }
             catch (Exception e)
             {
@@ -39,14 +39,14 @@ namespace Vsite.CSharp.TipoviOperatori
             Console.ReadKey();
         }
 
-        // TODO:111 Pogledati donje pretvorbe i razjasniti razliku.
+        //  Pogledati donje pretvorbe i razjasniti razliku.
 
         // ovo je česti način pisanja kada želimo napraviti "sigurnu" pretvorbu:
         static void Pretvorba1()
         {
-            Osoba janko = new Student();
-
-            if (janko is Student)
+            Osoba janko = new Student();//bazni se pokusava pridruziti izvedeno
+            //tu se prvo radi cash pa provjera
+            if (janko is Student)//provjera ce proci jer je u tipu student
             {
                 Student studentJanko = (Student)janko;
                 // iskoristi studenta unutar bloka
@@ -58,8 +58,8 @@ namespace Vsite.CSharp.TipoviOperatori
         static void Pretvorba2()
         {
             Osoba janko = new Student();
-
-            Student studentJanko = janko as Student;
+            //tu se pomocu as pokusa napraviti cash tj pretvorbu i vraca je na stvarni mjestio i efikasniji je
+            Student studentJanko = janko as Student;//as ce pokusati napraviti cash 
             if (studentJanko != null)
             {
             }
