@@ -34,16 +34,32 @@ namespace Vsite.CSharp.TipoviOperatori
     {
         static void Main()
         {
-            // TODO:120 Napisati naredbu kojom će se ispisati duljina podatka tipa decimal 
+            //  Napisati naredbu kojom će se ispisati duljina podatka tipa decimal 
+            Console.WriteLine(sizeof(decimal));
+            //decimal zauzima 16 bajtova u memoriji
 
-            // TODO:121 Napisati naredbu kojom će se ispisati duljina podatka tipa double 
 
-            // TODO:122 Ispisati duljinu tipa MojaStruktura
+            //  Napisati naredbu kojom će se ispisati duljina podatka tipa double 
+            Console.WriteLine(sizeof(double));
+            //double zauzima 8 bajtova u memoriji 
+            unsafe//jer ove dole naredbe ne bi mogli koristiti + u properties moramo oznaciti unsafe code
+                //vrijedi za strukture
+                //a za klasu :
+                //ne mozemo dobiti informaciju o velicini tj duljinu jer se sprema u posebni dio memorije
+            {
+                //  Ispisati duljinu tipa MojaStruktura
+                Console.WriteLine(sizeof(MojaStruktura));
 
-            // TODO:123 Ispisati duljinu tipa MojaSloženaStruktura
+                MojaStruktura ms = new MojaStruktura();
+                //Console.WriteLine(sizeof(ms.GetType));
+                // zauzima 24 bajtova u memoriji jer se a i b zbrajaju 16+8
 
-            // TODO:124 Ispisati duljinu tipa MojaKlasa
+                //  Ispisati duljinu tipa MojaSloženaStruktura
+                Console.WriteLine(sizeof(MojaSloženaStruktura));
 
+                //  Ispisati duljinu tipa MojaKlasa
+               // Console.WriteLine(sizeof(MojaKlasa)); //error -objasnjenje gore
+            }
 
             Console.ReadKey();
         }
