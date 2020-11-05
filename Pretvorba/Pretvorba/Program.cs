@@ -26,30 +26,35 @@ namespace Vsite.CSharp.TipoviOperatori
             Osoba osoba = new Osoba();
             NuklearniFizičar nuklFizičar = new NuklearniFizičar();
 
-            // TODO:090 Dodati pozive svih mogućih metoda za objekte osoba i nuklFizičar, pokrenuti program i provjeriti rezultat izvođenja.
+            //  Dodati pozive svih mogućih metoda za objekte osoba i nuklFizičar, pokrenuti program i provjeriti rezultat izvođenja.
+            osoba.Hodaj();
+            nuklFizičar.Hodaj();
+            nuklFizičar.NapraviBombu();
 
             Osoba osobaNuklFiz = new NuklearniFizičar();
+            //  Dodati pozive svih mogućih metoda za objekt osobaNuklFiz, pokrenuti program i provjeriti rezultat.
+            //za pomicanje redova alt+strelice
+            osobaNuklFiz.Hodaj();
 
-            // TODO:091 Dodati pozive svih mogućih metoda za objekt osobaNuklFiz, pokrenuti program i provjeriti rezultat.
-
-            // TODO:092 Provjeriti koja su od donjih pridruživanja dozvoljena. Modificirajte naredbe tako da prevoditelj ne prijavljuje pogreške.
-            //osobaNuklFiz = nuklFiz;
+            //  Provjeriti koja su od donjih pridruživanja dozvoljena. Modificirajte naredbe tako da prevoditelj ne prijavljuje pogreške.
+            osobaNuklFiz = nuklFizičar;//izvedeni tip se moze pridruziti baznom,obrnuto ne
             //nuklFizičar = osobaNuklFiz;
 
-            // TODO:093 Dodati naredbu koja će omogućiti da se na objektu osobaNuklFiz pozove metoda NapraviBombu, pokrenuti program i provjeriti rezultat izvođenja.
+            //  Dodati naredbu koja će omogućiti da se na objektu osobaNuklFiz pozove metoda NapraviBombu, pokrenuti program i provjeriti rezultat izvođenja.
+            ((NuklearniFizičar)osobaNuklFiz).NapraviBombu();
 
+            //  Otkomentirati donje naredbe(ctrl+k,u), provjeriti prijavljuje li program pogreške, pokrenuti program i provjeriti rezultat izvođenja.
+            Osoba novaOsoba = osobaNuklFiz;
+            nuklFizičar = (NuklearniFizičar)novaOsoba;
+            nuklFizičar.Hodaj();
+            nuklFizičar.NapraviBombu();//sve ce proci
 
-            // TODO:094 Otkomentirati donje naredbe, provjeriti prijavljuje li program pogreške, pokrenuti program i provjeriti rezultat izvođenja.
-            //Osoba novaOsoba = osobaNuklFiz;
+            //pao je jer pokusavam objektu novaosoba kaskati u nuk.fiz 
+            ////program nez kako bi osobu pretvorio u tip fiz koji ima vise tipova od orginala
             //nuklFizičar = (NuklearniFizičar)novaOsoba;
-            //nuklFizičar.Hodaj();
-            //nuklFizičar.NapraviBombu();
-
             //novaOsoba = osoba;
-            //nuklFizičar = (NuklearniFizičar)novaOsoba;
             //nuklFizičar.Hodaj();
             //nuklFizičar.NapraviBombu();
-
 
             Console.ReadKey();
         }
