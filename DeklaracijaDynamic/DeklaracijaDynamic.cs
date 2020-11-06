@@ -30,7 +30,7 @@ namespace Vsite.CSharp.TipoviOperatori
             // Napisati naredbu za postavljanje vrijednosti npostojećeg polja c u toj strukturi na proizvoljnu vrijednosti i provjeriti da li se kod može prevesti.
             //s.c = 23;
 
-            // TODO:074 Pokrenuti program i provjeriti ispis.
+            // Pokrenuti program i provjeriti ispis.
 
             Console.ReadKey();
         }
