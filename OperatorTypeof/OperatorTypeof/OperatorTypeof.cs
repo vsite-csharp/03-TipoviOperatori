@@ -9,26 +9,37 @@ namespace Vsite.CSharp.TipoviOperatori
         {
             Type t = typeof(System.DateTime);
 
-            // TODO:130 Napisati petlju koja će za svaki član kojeg vrati metoda t.GetMembers ispisati ime tog člana.
+            // Napisati petlju koja će za svaki član kojeg vrati metoda t.GetMembers ispisati ime tog člana.
+            foreach (MemberInfo mi in t.GetMembers())
+                Console.WriteLine(mi.Name);
 
-            // TODO:131 Dodati u petlji i ispis tipa svakog člana.
-            //foreach (MemberInfo mi in t.GetMembers())
-            //{
-            //    Console.WriteLine($"{mi.Name} {mi.MemberType.ToString()}");
-            //}
+            // Dodati u petlji i ispis tipa svakog člana.
+            foreach (MemberInfo mi in t.GetMembers())
+            {
+                Console.WriteLine($"{mi.Name} {mi.MemberType}");
+            }
 
+            // Dodati petlju koja će za svaki član kojeg vrati metoda GetMethods ispisati ime metode i povratni tip.
+            foreach (MethodInfo mi in t.GetMethods())
+                Console.WriteLine($"{mi.Name} {mi.MemberType}");
 
-            // TODO:132 Dodati petlju koja će za svaki član kojeg vrati metoda GetMethods ispisati ime metode i povratni tip.
+            // Proširiti tijelo petlje tako da se za svaku metodu ispišu i njeni parametri(tip i ime parametra).
+            foreach (MethodInfo mi in t.GetMethods())
+                Console.WriteLine($"{mi.DeclaringType} {mi.DeclaringType.FullName}");
 
-            // TODO:133 Proširiti tijelo petlje tako da se za svaku metodu ispišu i njeni parametri(tip i ime parametra).
-
-            // TODO:134 Proširiti tijelo petlje tako da se za svaku metodu ispišu ima li public, protected ili private pravo pristupa.
+            // Proširiti tijelo petlje tako da se za svaku metodu ispišu ima li public, protected ili private pravo pristupa.
             foreach (MethodInfo mi in t.GetMethods())
             {
-                Console.WriteLine($"{mi.ReturnType.ToString()} {mi.Name}");
+                Console.WriteLine($"{mi.ReturnType} {mi.Name}");
+                if (mi.IsPublic)
+                    Console.WriteLine("Public");
+                else if (mi.IsPrivate)
+                    Console.WriteLine("Private");
+                else
+                    Console.WriteLine("Protected");
                 foreach (var parameter in mi.GetParameters())
                 {
-                    Console.WriteLine($"  {parameter.ParameterType.ToString()} {parameter.Name}");
+                    Console.WriteLine($"  {parameter.ParameterType} {parameter.Name}");
                 }
             }
 
