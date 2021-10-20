@@ -32,7 +32,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "12", "12", "{4CD258FB-1C95-
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "13", "13", "{04EC2618-D1E7-49C0-BCA9-9419BBBABE7E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UgrađeniTipoviIL", "UgradjeniTipoviIL\UgrađeniTipoviIL.csproj", "{0E4694E7-B5C0-4479-9E94-C0063782BF4C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UgradjeniTipoviIL", "UgradjeniTipoviIL\UgradjeniTipoviIL.csproj", "{0E4694E7-B5C0-4479-9E94-C0063782BF4C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PridruživanjeBazniIzvedeni", "PridruzivanjeBazniIzvedeni\PridruzivanjeBazniIzvedeni\PridruživanjeBazniIzvedeni.csproj", "{E829D863-127E-453C-9C5E-ADC9670EE730}"
 EndProject
