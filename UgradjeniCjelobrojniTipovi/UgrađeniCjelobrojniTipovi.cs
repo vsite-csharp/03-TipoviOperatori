@@ -6,9 +6,9 @@ namespace Vsite.CSharp.TipoviOperatori
     {
         static void Main()
         {
-            // TODO:020 Otkomentirati donje naredbe koje ispisuju najveće brojeve koji se mogu pohraniti u tip int odn. long.
-            // Console.WriteLine(int.MaxValue);
-            // Console.WriteLine(long.MaxValue);
+            // 020 Otkomentirati donje naredbe koje ispisuju najveće brojeve koji se mogu pohraniti u tip int odn. long.
+             Console.WriteLine(int.MaxValue);
+             Console.WriteLine(long.MaxValue);
 
             // TODO:021 Dodati naredbe koje će ispisati najmanje brojeve koji se mogu pohraniti u tip int odn. u tip long.
 
