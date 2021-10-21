@@ -13,7 +13,7 @@ namespace Vsite.CSharp.TipoviOperatori
             // ++TODO:012 Inicijalizirati varijablu tipa string pozivom podrazumijevanog konstruktora.Provjeriti dozvoljava li to prevoditelj.
             // string s = new string();
             // ++ TODO:013 Provjeriti koji su mogući konstruktori za string.
-            string s= new string('c', 5)
+            string s = new string('c', 5);
             // TODO:014 Napisati kod koji inicijalizira novu varijablu tipa string na vrijednost "string 1".
             string s1 = "string 1";
             Console.ReadKey();
