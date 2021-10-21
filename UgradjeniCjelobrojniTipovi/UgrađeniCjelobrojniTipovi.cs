@@ -20,7 +20,7 @@ namespace Vsite.CSharp.TipoviOperatori
             //Deklarirati varijablu tipa long i pridružiti joj vrijednost gornje varijable tipa int.
             long long1 = int1;
             // Deklarirati varijablu tipa short i pridružiti joj vrijednost gornje varijable tipa int. 
-            //short s1 = int1;
+            short s1 = (short)int1;
             // Primjeri numeričkog preljeva
             // Deklarirati varijablu tipa int i dodijeliti joj vrijednost int.MaxValue. Ispisati vrijednost varijable uvećane za 1.
             int i2 = Int32.MaxValue;
@@ -30,7 +30,7 @@ namespace Vsite.CSharp.TipoviOperatori
             int i3 = Int32.MinValue;
             i3--;
             Console.WriteLine(i3);
-            // TODO:027 U postavkama projekta uključiti opciju za provjeru numeričkog preljeva. Ponovno pokrenuti program i provjeriti što će se dogoditi.
+            // U postavkama projekta uključiti opciju za provjeru numeričkog preljeva. Ponovno pokrenuti program i provjeriti što će se dogoditi.
 
             // Primjer cjelobrojnog dijeljenja nulom
             // Definirati varijablu tipa int te dodati naredbu kojom se ta varijabla dijeli s nulom. Pokrenuti program i provjeriti što će se dogoditi.

@@ -17,7 +17,7 @@ namespace Vsite.CSharp.TipoviOperatori
             //string myString = new string();
 
             // Provjeriti koji su mogući konstruktori za string.
-            //string myString2 = new string();
+            string myString2 = new string('s', 5);
             // Napisati kod koji inicijalizira novu varijablu tipa string na vrijednost "string 1".
             string myString3 = "string 1";
 
