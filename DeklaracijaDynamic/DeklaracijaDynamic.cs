@@ -22,7 +22,7 @@ namespace Vsite.CSharp.TipoviOperatori
             // 071 Napisati naredbe za postavljanje vrijednosti polja a i b u toj strukturi na proizvoljne vrijednosti i provjeriti da li se kod može prevesti.
             //s.a = 23.4;
             s.a = 234;
-            // TODO:072 Dodati naredbe za ispis polja a i b u toj strukturi.
+            // 072 Dodati naredbe za ispis polja a i b u toj strukturi.
             s.b = 123M;
 
             // 073 Napisati naredbu za postavljanje vrijednosti npostojećeg polja c u toj strukturi na proizvoljnu vrijednosti i provjeriti da li se kod može prevesti.
