@@ -20,6 +20,7 @@ namespace Vsite.CSharp.TipoviOperatori
             decimal dec3 = 13445M;
 
             string mirko = "slavko";
+
         }
     }
 }
