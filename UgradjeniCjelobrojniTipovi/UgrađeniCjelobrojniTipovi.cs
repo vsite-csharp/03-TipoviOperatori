@@ -32,7 +32,7 @@ namespace Vsite.CSharp.TipoviOperatori
             // 027 U postavkama projekta uključiti opciju za provjeru numeričkog preljeva. Ponovno pokrenuti program i provjeriti što će se dogoditi.
             //Solution desni klik pa properties, pod advanced
             // Primjer cjelobrojnog dijeljenja nulom
-            // TODO:028 Definirati varijablu tipa int te dodati naredbu kojom se ta varijabla dijeli s nulom. Pokrenuti program i provjeriti što će se dogoditi.
+            // 028 Definirati varijablu tipa int te dodati naredbu kojom se ta varijabla dijeli s nulom. Pokrenuti program i provjeriti što će se dogoditi.
             int a = 5;
             //var b = a / 0;
             Console.ReadKey(false);
