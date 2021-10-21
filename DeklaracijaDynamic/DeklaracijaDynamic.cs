@@ -23,11 +23,11 @@ namespace Vsite.CSharp.TipoviOperatori
             s.a = 234;
             s.b = 12.3;
 
-            // TODO:072 Dodati naredbe za ispis polja a i b u toj strukturi.
+            // Dodati naredbe za ispis polja a i b u toj strukturi.
             Console.WriteLine(s.a);
             Console.WriteLine(s.b);
 
-            // TODO:073 Napisati naredbu za postavljanje vrijednosti npostojećeg polja c u toj strukturi na proizvoljnu vrijednosti i provjeriti da li se kod može prevesti.
+            // Napisati naredbu za postavljanje vrijednosti npostojećeg polja c u toj strukturi na proizvoljnu vrijednosti i provjeriti da li se kod može prevesti.
             //s.c = "hello";
 
             // Pokrenuti program i provjeriti ispis.
