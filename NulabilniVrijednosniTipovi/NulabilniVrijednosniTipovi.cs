@@ -12,15 +12,16 @@ namespace Vsite.CSharp.TipoviOperatori
             double običniDuplić = Math.PI;
             Console.WriteLine(običniDuplić);
 
-            // TODO:050  Dodati naredbu kojom se vrijednost nulabilniDuplić postavlja na null referencu te ispisati nakon toga sadržaj varijable.
-
-            // TODO:051 Pridružiti varijabli običniDuplić vrijednost varijable nulabilniDuplić. Provjeriti što će se dogoditi.
-
-            // TODO:052 Postaviti vrijednost varijable nulabilniDuplić na konačnu vrijednost te ispisati sadržaj.
-
-            // TODO:053 Ponovno pokušati pridružiti varijabli običniDuplić vrijednost varijable nulabilniDuplić.
-
-            // TODO:054 Do tuda napravi DZ za iduci put.
+            // Dodati naredbu kojom se vrijednost nulabilniDuplić postavlja na null referencu te ispisati nakon toga sadržaj varijable.
+            nulabilniDuplić = null;
+            Console.WriteLine($"\nnulabilniDuplić = {nulabilniDuplić}\n");
+            // Pridružiti varijabli običniDuplić vrijednost varijable nulabilniDuplić. Provjeriti što će se dogoditi.
+            //običniDuplić = nulabilniDuplić; // Cannot convert double to double?
+            // Postaviti vrijednost varijable nulabilniDuplić na konačnu vrijednost te ispisati sadržaj.
+            nulabilniDuplić = 23;
+            Console.WriteLine($"nulabilniDuplić = {nulabilniDuplić}\n");
+            // Ponovno pokušati pridružiti varijabli običniDuplić vrijednost varijable nulabilniDuplić.
+            //običniDuplić = nulabilniDuplić; // Cannot convert double to double?
 
             Console.ReadKey();
         }

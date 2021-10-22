@@ -22,7 +22,7 @@ namespace Vsite.CSharp.TipoviOperatori
             double doubleNumber = 1;
             int intNumber = 1;
             Console.WriteLine("\nSum type: " + (doubleNumber + intNumber).GetTypeCode());
-            // TODO:044 Definirati varijablu tipa decimal i ispisati zbroj s varijablom tipa double te provjeriti kakvog tipa je taj zbroj.
+            // Definirati varijablu tipa decimal i ispisati zbroj s varijablom tipa double te provjeriti kakvog tipa je taj zbroj.
             decimal number = 5;
             //Console.WriteLine($"\nSum: " + (number + doubleNumber) +"\nSum type: " + (number + doubleNumber).GetTypeCode()); // Cannot add decimal and double type.
             Console.WriteLine($"\nSum: " + (number + (decimal)doubleNumber) +"\nSum type: " + (number + (decimal)doubleNumber).GetTypeCode());
