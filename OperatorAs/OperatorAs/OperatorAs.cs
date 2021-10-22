@@ -12,7 +12,17 @@ namespace Vsite.CSharp.TipoviOperatori
     {
         static void Main()
         {
-            // TODO:110 Pokrenuti program i provjeriti što će se ispisati te koja će iznimka biti bačena.
+            
+            Pretvorba1();
+            Pretvorba2();
+            Pretvorba3();
+
+            Console.ReadKey();
+        }
+
+        static void Pretvorba3()
+        {
+            // Pokrenuti program i provjeriti što će se ispisati te koja će iznimka biti bačena.
             Osoba janko = new Student();
             Student jankoStudent = janko as Student;
             if (jankoStudent != null)
@@ -36,14 +46,14 @@ namespace Vsite.CSharp.TipoviOperatori
                 Console.WriteLine(e.Message);
             }
 
-            Console.ReadKey();
         }
 
-        // TODO:111 Pogledati donje pretvorbe i razjasniti razliku.
+        // Pogledati donje pretvorbe i razjasniti razliku.
 
         // ovo je česti način pisanja kada želimo napraviti "sigurnu" pretvorbu:
         static void Pretvorba1()
         {
+            Console.WriteLine("Pretvorba 1");
             Osoba janko = new Student();
 
             if (janko is Student)
@@ -57,6 +67,7 @@ namespace Vsite.CSharp.TipoviOperatori
         // (pogledati i usporediti generirani IL kod za obje metode)
         static void Pretvorba2()
         {
+            Console.WriteLine("Pretvorba 2");
             Osoba janko = new Student();
 
             Student studentJanko = janko as Student;
