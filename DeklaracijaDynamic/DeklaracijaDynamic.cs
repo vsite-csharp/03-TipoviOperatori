@@ -24,7 +24,7 @@ namespace Vsite.CSharp.TipoviOperatori
             // 072 Dodati naredbe za ispis polja a i b u toj strukturi.
             s.b = 123;
             // 073 Napisati naredbu za postavljanje vrijednosti npostojećeg polja c u toj strukturi na proizvoljnu vrijednosti i provjeriti da li se kod može prevesti.
-            s.c = "hello";
+            //s.c = "hello";
             // 074 Pokrenuti program i provjeriti ispis.
 
             Console.ReadKey();
