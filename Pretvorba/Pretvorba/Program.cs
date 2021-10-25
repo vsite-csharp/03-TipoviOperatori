@@ -28,7 +28,6 @@ namespace Vsite.CSharp.TipoviOperatori
 
             // TODO:090 Dodati pozive svih mogućih metoda za objekte osoba i nuklFizičar, pokrenuti program i provjeriti rezultat izvođenja.
 
-            Osoba osobaNuklFiz = new NuklearniFizičar();
 
             // TODO:091 Dodati pozive svih mogućih metoda za objekt osobaNuklFiz, pokrenuti program i provjeriti rezultat.
 
