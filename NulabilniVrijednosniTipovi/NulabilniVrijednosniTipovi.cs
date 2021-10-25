@@ -23,7 +23,7 @@ namespace Vsite.CSharp.TipoviOperatori
             nulabilniDuplić = 1.2345;
             Console.WriteLine(nulabilniDuplić);
 
-            // TODO:053 Ponovno pokušati pridružiti varijabli običniDuplić vrijednost varijable nulabilniDuplić.
+            // :053 Ponovno pokušati pridružiti varijabli običniDuplić vrijednost varijable nulabilniDuplić.
             //običniDuplić = nulabilniDuplić;
 
             Console.ReadKey();

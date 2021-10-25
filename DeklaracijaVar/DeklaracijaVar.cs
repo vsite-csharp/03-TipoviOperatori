@@ -16,7 +16,7 @@ namespace Vsite.CSharp.TipoviOperatori
             var i0 = 15;
             // 061 Definirati varijablu "d0" tipa var i inicijalizirati ju nekim decimalnim brojem.
             var d0 = 3.45;
-            // TODO:062 Dodati naredbu: i0 = d0; te provjeriti prihvaća li prevoditelj tu naredbu.
+            // 062 Dodati naredbu: i0 = d0; te provjeriti prihvaća li prevoditelj tu naredbu.
             i0 = (int)d0;
             // 063 Definirati varijablu "i1" tipa int i inicijalizirati ju istim cijelim brojem kao varijablu i0.
             int i1 = 13;
