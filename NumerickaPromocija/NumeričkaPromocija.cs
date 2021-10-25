@@ -10,7 +10,7 @@ namespace Vsite.CSharp.TipoviOperatori
 
             int first = 5;
             int second = 2;
-            Console.WriteLine(first / second); // 2 
+            Console.WriteLine((first/second).GetType()); // System.Int32
 
             // 041 Dijeljitelj i/ili dijeljenik u gornjem izrazu modificirati tako da dijeljenje bude s ostatkom.
 
@@ -22,7 +22,7 @@ namespace Vsite.CSharp.TipoviOperatori
 
             int maxInt = int.MaxValue;
             long one = 1;
-            Console.WriteLine(maxInt + " " + one + " " + maxInt + one); // 2147483647 1 21474836471
+            Console.WriteLine($"Max Integer value : " + maxInt + " add " + one + " is : " + maxInt + one); // 2147483647 1 21474836471
 
 
             // 043 Definirati jednu varijablu tipa double, zbrojiti ju s varijablom tipa int i provjeriti kakvog tipa je taj zbroj.
@@ -30,14 +30,13 @@ namespace Vsite.CSharp.TipoviOperatori
             double val = 1.2;
             int secVal = 5;
             var variableSum = val + secVal;
-            Console.WriteLine(val + secVal + " " + variableSum.GetType());  // 6,2 System.Double
+            Console.WriteLine(val + " + "+ secVal + " is  " + variableSum + " and it is "  + variableSum.GetType());  // 6,2 System.Double
 
 
             // 044 Definirati varijablu tipa decimal i ispisati zbroj s varijablom tipa double te provjeriti kakvog tipa je taj zbroj.
-            
-            decimal d = 125M;
-            double e = 35;
-            //var sumDecimalDouble = e + d; // it is not possible to calculate
+
+            decimal d = 5;
+            //var sumDecimalDouble = e + val; // it is not possible to calculate
 
 
             Console.ReadKey();

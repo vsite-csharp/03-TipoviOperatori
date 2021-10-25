@@ -25,9 +25,10 @@ namespace Vsite.CSharp.TipoviOperatori
             float f3 = 9;
 
             // 032 Ispisati razlike (f1-f2), odn. (f1-f3) (pomoću formata "{0:F2}" osigurati ispis svih znamenki) i provjeriti točnost ispisa.
-            Console.WriteLine(f1 +" " + f2 +" " +f3); 
-            Console.WriteLine($"{0:F2}", f1 - f2); 
-            Console.WriteLine($"{0:F2}", f1 - f3);
+            Console.WriteLine(f1 + " " + f2 + " " + f3); 
+            Console.WriteLine($"(f1-f2) = {0:F2}", f1 - f2); 
+            Console.WriteLine($"(f1-f3) = {0:F2}", f1 - f3);
+            // It is not correct 
 
             // Primjer binarnog zaokruživanja na rezultat
             // 033 Definirati dvije varijable trećina1 i trećina2 tipa double s vrijednostima 1/3, odn. (1-2/3). Ispisati njihove vrijednosti te razlike (trećina1-trećina1), odn. (trećina1-tećina2).
@@ -37,7 +38,7 @@ namespace Vsite.CSharp.TipoviOperatori
 
             Console.WriteLine(trecina - trecina); //0
             Console.WriteLine(trecina - trecina2); // -1
-            Console.WriteLine(trecina +" "+ trecina2);  //0, -1 
+            Console.WriteLine(trecina +" "+ trecina2);  //0, -1  it is not correct 
 
             // Primjer utjecaja ograničenog raspona na rezultat množenja/dijeljenja
             // 034 Definirati varijablu tipa double s vrijednošću double.MaxValue te ispisati rezultat njenog množenja s 2. Ponoviti to za double.MinValue.

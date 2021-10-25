@@ -16,7 +16,7 @@ namespace Vsite.CSharp.TipoviOperatori
             // 050  Dodati naredbu kojom se vrijednost nulabilniDuplić postavlja na null referencu te ispisati nakon toga sadržaj varijable.
 
             nulabilniDuplić = null;
-            Console.WriteLine("Nullable :" + nulabilniDuplić); // empty
+            Console.WriteLine("Nullable duplić :" + nulabilniDuplić); // empty
 
 
             // 051 Pridružiti varijabli običniDuplić vrijednost varijable nulabilniDuplić. Provjeriti što će se dogoditi.
@@ -26,7 +26,7 @@ namespace Vsite.CSharp.TipoviOperatori
 
             // 052 Postaviti vrijednost varijable nulabilniDuplić na konačnu vrijednost te ispisati sadržaj.
 
-            nulabilniDuplić = 52;
+            nulabilniDuplić = 52.25;
             Console.WriteLine("Final value: " + nulabilniDuplić);
 
             // 053 Ponovno pokušati pridružiti varijabli običniDuplić vrijednost varijable nulabilniDuplić.
