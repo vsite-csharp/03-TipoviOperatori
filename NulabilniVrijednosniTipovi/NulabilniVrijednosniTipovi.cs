@@ -12,13 +12,21 @@ namespace Vsite.CSharp.TipoviOperatori
             double običniDuplić = Math.PI;
             Console.WriteLine(običniDuplić);
 
-            // TODO:050  Dodati naredbu kojom se vrijednost nulabilniDuplić postavlja na null referencu te ispisati nakon toga sadržaj varijable.
+            //050  Dodati naredbu kojom se vrijednost nulabilniDuplić postavlja na null referencu te ispisati nakon toga sadržaj varijable.
+            nulabilniDuplić = null;
+            Console.WriteLine(nulabilniDuplić);
 
-            // TODO:051 Pridružiti varijabli običniDuplić vrijednost varijable nulabilniDuplić. Provjeriti što će se dogoditi.
+            //051 Pridružiti varijabli običniDuplić vrijednost varijable nulabilniDuplić. Provjeriti što će se dogoditi.
+            //običniDuplić = nulabilniDuplić;//Severity	Code	Description	Project	File	Line	Suppression State
+            //Error CS0266  Cannot implicitly convert type 'double?' to 'double'.An explicit conversion exists (are you missing a cast?)   NulabilniVrijednosniTipovi C:\Users\katap\03-TipoviOperatori\NulabilniVrijednosniTipovi\NulabilniVrijednosniTipovi.cs	20	Active
 
-            // TODO:052 Postaviti vrijednost varijable nulabilniDuplić na konačnu vrijednost te ispisati sadržaj.
+            //052 Postaviti vrijednost varijable nulabilniDuplić na konačnu vrijednost te ispisati sadržaj.
+            nulabilniDuplić = 5;
+            Console.WriteLine(nulabilniDuplić);
 
-            // TODO:053 Ponovno pokušati pridružiti varijabli običniDuplić vrijednost varijable nulabilniDuplić.
+            //053 Ponovno pokušati pridružiti varijabli običniDuplić vrijednost varijable nulabilniDuplić.
+            //običniDuplić = nulabilniDuplić;//Severity	Code	Description	Project	File	Line	Suppression State
+            //Error CS0266  Cannot implicitly convert type 'double?' to 'double'.An explicit conversion exists (are you missing a cast?)   NulabilniVrijednosniTipovi C:\Users\katap\03-TipoviOperatori\NulabilniVrijednosniTipovi\NulabilniVrijednosniTipovi.cs	28	Active
 
             Console.ReadKey();
         }
