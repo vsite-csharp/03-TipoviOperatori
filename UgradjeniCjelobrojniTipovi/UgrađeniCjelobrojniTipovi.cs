@@ -30,13 +30,14 @@ namespace Vsite.CSharp.TipoviOperatori
             // 026 Deklarirati varijablu tipa int i dodijeliti joj vrijednost int.MinValue. Ispisati vrijednost varijable umanjenu za 1.
             int min = int.MinValue;
             Console.WriteLine(min - 1);
-            // TODO:027 U postavkama projekta uključiti opciju za provjeru numeričkog preljeva. Ponovno pokrenuti program i provjeriti što će se dogoditi.
+            // :027 U postavkama projekta uključiti opciju za provjeru numeričkog preljeva. Ponovno pokrenuti program i provjeriti što će se dogoditi.
             // Ovaj solution, desni klik miša, properties, build -> Check arithmetic overflow
             // Exception Settings
             // Primjer cjelobrojnog dijeljenja nulom
             // 028 Definirati varijablu tipa int te dodati naredbu kojom se ta varijabla dijeli s nulom. Pokrenuti program i provjeriti što će se dogoditi.
             int a = 5;
-            var b = a / 0;
+            Console.WriteLine(a);
+            //var b = a / 0;
             // System divided by zero exception
             Console.ReadKey();
         }
