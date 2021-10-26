@@ -23,10 +23,10 @@ namespace Vsite.CSharp.TipoviOperatori
             // Primjeri numeričkog preljeva
             //  Deklarirati varijablu tipa int i dodijeliti joj vrijednost int.MaxValue. Ispisati vrijednost varijable uvećane za 1.
             int max = int.MaxValue;
-            Console.(max + 1);
+            Console.WriteLine(max+1);
             //  Deklarirati varijablu tipa int i dodijeliti joj vrijednost int.MinValue. Ispisati vrijednost varijable umanjenu za 1.
             int min = int.MinValue;
-            Console.(min - 1);
+            Console.WriteLine(min - 1);
             // U postavkama projekta uključiti opciju za provjeru numeričkog preljeva. Ponovno pokrenuti program i provjeriti što će se dogoditi.
             int a = 5;
             var b = a / 0;
