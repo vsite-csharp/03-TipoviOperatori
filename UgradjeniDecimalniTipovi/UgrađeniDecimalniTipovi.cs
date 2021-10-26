@@ -10,8 +10,17 @@ namespace Vsite.CSharp.TipoviOperatori
     {
         static void Main()
         {
-            // TODO:030 Ispisati granične vrijednosti za tipove double, float i decimal.
-
+            // 030 Ispisati granične vrijednosti za tipove double, float i decimal.
+            double d1_min = Double.MinValue;
+            double d1_max = Double.MaxValue;
+            float f0_MinValue = Single.MinValue;
+            float f0_MaxValue = Single.MaxValue;
+            decimal d2_max = Decimal.MaxValue;
+            decimal d2_min = Decimal.MinValue;
+            Console.WriteLine("double {0} {1}", d1_min, d1_max);
+            Console.WriteLine("float {0} {1}", f0_MinValue, f0_MaxValue);
+            Console.WriteLine("decimal {0} {1}", d2_min, d2_max);
+            Console.WriteLine("done");
             // Primjer utjecaja ograničene preciznosti na rezultat oduzimanja/zbrajanja
             // TODO:031 Definirati tri varijable f1, f2 i f3 tipa float s vrijednostima: 1234567890, 1234567990 i 9.
 
