@@ -38,7 +38,7 @@ namespace Vsite.CSharp.TipoviOperatori
             // OK-TODO:028 Definirati varijablu tipa int te dodati naredbu kojom se ta varijabla dijeli s nulom. Pokrenuti program i provjeriti što će se dogoditi.
             //Console.Write(min--); 
             int a = 5;
-            var b = a / 0;
+            //var b = a / 0;
 
             Console.ReadKey();
         }
