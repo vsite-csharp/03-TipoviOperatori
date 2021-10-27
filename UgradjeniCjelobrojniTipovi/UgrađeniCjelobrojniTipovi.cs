@@ -17,9 +17,9 @@ namespace Vsite.CSharp.TipoviOperatori
             // :022 Deklarirati varijablu tipa int i dodijeliti joj vrijednost 1. 
             int var1 = 1;
             // :023 Deklarirati varijablu tipa long i pridružiti joj vrijednost gornje varijable tipa int.
-            long var2 = jedan;
+            long var2 = var1;
             // :024 Deklarirati varijablu tipa short i pridružiti joj vrijednost gornje varijable tipa int. 
-            short var3 = (short) jedan;
+            short var3 = (short)var1;
             // Primjeri numeričkog preljeva
             // 025 Deklarirati varijablu tipa int i dodijeliti joj vrijednost int.MaxValue. Ispisati vrijednost varijable uvećane za 1.
             int max = int.MaxValue;
