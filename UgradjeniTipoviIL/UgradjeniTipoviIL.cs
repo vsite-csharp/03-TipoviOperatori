@@ -14,7 +14,7 @@ namespace Vsite.CSharp.TipoviOperatori
             l = 4294967296;
             float f = 10.3F;
             double dbl = 12.8;
-            // TODO: pogledaj ako je dec 13445M, 1334.5M i usporedi s razlicitim vrijednostima u double
+            // : pogledaj ako je dec 13445M, 1334.5M i usporedi s razlicitim vrijednostima u double
             decimal dec = 13445M;
             string mirko = "slavko";
         }
