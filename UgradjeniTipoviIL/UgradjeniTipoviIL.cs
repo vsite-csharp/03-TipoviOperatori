@@ -6,7 +6,7 @@ namespace Vsite.CSharp.TipoviOperatori
     {
         static void Main()
         {
-            // ++ TODO:000 Prevesti program te generirani kod pogledati ILDASM-om (IL disassemblerom).
+            // 000 Prevesti program te generirani kod pogledati ILDASM-om (IL disassemblerom).
             // Pogleda li se generirani medjukod (IL), npr. pomocu ILDasm-a vidi se da svi tipovi osim 
             // decimal imaju direktne operacije u medjujeziku!
             int i = 5;
@@ -18,6 +18,10 @@ namespace Vsite.CSharp.TipoviOperatori
             decimal dec2 = 1344.5M;
             decimal dec3 = 13445M;
             string mirko = "slavko";
+
+            Console.WriteLine("hej hej, mirko="+mirko+". Gotovo!");
+            Console.ReadKey(false);
+
         }
     }
 }
