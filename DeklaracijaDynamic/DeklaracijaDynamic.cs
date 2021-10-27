@@ -20,11 +20,12 @@ namespace Vsite.CSharp.TipoviOperatori
             dynamic s = new S();
 
             // TODO:071 Napisati naredbe za postavljanje vrijednosti polja a i b u toj strukturi na proizvoljne vrijednosti i provjeriti da li se kod može prevesti.
-
+            s.a = 23.4;
+            s.b = 123m;
             // TODO:072 Dodati naredbe za ispis polja a i b u toj strukturi.
 
-            // TODO:073 Napisati naredbu za postavljanje vrijednosti npostojećeg polja c u toj strukturi na proizvoljnu vrijednosti i provjeriti da li se kod može prevesti.
-
+            // 073 Napisati naredbu za postavljanje vrijednosti npostojećeg polja c u toj strukturi na proizvoljnu vrijednosti i provjeriti da li se kod može prevesti.
+            s.c = "hello";
             // TODO:074 Pokrenuti program i provjeriti ispis.
 
             Console.ReadKey();
