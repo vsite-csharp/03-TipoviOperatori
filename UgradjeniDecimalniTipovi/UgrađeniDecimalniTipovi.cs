@@ -16,7 +16,7 @@ namespace Vsite.CSharp.TipoviOperatori
             Console.WriteLine(float.MaxValue);
             Console.WriteLine(float.MinValue);
             Console.WriteLine(decimal.MaxValue);
-            Console.WriteLine(decimal.MinValue);
+            Console.WriteLine(decimal.MinValue);        
             // Primjer utjecaja ograničene preciznosti na rezultat oduzimanja/zbrajanja
             // 031 Definirati tri varijable f1, f2 i f3 tipa float s vrijednostima: 1234567890, 1234567990 i 9.
             float f1 = 1234567890;
@@ -49,8 +49,8 @@ namespace Vsite.CSharp.TipoviOperatori
             // 037 Definirati varijablu tipa double i pridružiti joj vrijednost 5.
             double varijabla3 = 5;
             // 038 Varijabli tipa int pridružiti vrijednost prethodno definirane varijable i ispisati njenu vrijednost.
-            int varijbla4 = varijabla3;
-            Console.WriteLine(varijabla4);
+            int varijbla4 = Convert.ToInt32(varijabla3);
+            Console.WriteLine(varijbla4);
             Console.ReadKey();
         }
     }

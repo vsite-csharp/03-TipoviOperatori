@@ -11,7 +11,7 @@ namespace Vsite.CSharp.TipoviOperatori
             int varijabla2 = 4;
             Console.WriteLine(varijabla1 / varijabla2);
             // 041 Dijeljitelj i/ili dijeljenik u gornjem izrazu modificirati tako da dijeljenje bude s ostatkom.
-            Console.WriteLine(varijabla1 / (varijabla1/varijabla2))
+            Console.WriteLine(varijabla1 / (varijabla1/varijabla2));
             // TODO:042 Definirati varijablu tipa int s vrijednošću int.MaxValue i jednu varijablu tipa long s vrijednošću 1. Ispisati vrijednosti tih varijabli i njihov zbroj.
             int varijabla3 = int.MaxValue;
             long varijabla4 = 1;

@@ -18,7 +18,7 @@ namespace Vsite.CSharp.TipoviOperatori
             var d0 = 34.53534;
             // 62 Dodati naredbu: i0 = d0; te provjeriti prihvaća li prevoditelj tu naredbu.
             //i0 = d0;
-            // TODO:063 Definirati varijablu "i1" tipa int i inicijalizirati ju istim cijelim brojem kao varijablu i0.
+            // Definirati varijablu "i1" tipa int i inicijalizirati ju istim cijelim brojem kao varijablu i0.
             int i1 = 45;
             // 064 Definirati varijablu "d1" tipa double i inicijalizirati ju istim decimalnim brojem kao varijablu d0.
             double d1 = 34.53534;
