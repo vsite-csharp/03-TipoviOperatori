@@ -22,8 +22,9 @@ namespace Vsite.CSharp.TipoviOperatori
             double varijabla5 = 234;
             Console.WriteLine(varijabla1 + varijabla5);
             // 044 Definirati varijablu tipa decimal i ispisati zbroj s varijablom tipa double te provjeriti kakvog tipa je taj zbroj.
-            decimal varijabla6 = 122.331;
-            Console.WriteLine(varijabla6 + varijabla5);
+            decimal varijabla6 = 122.331M;
+            // greska nemguce napraviti zbroj decimal i double
+            //Console.WriteLine(varijabla6 + varijabla5);
 
             Console.ReadKey();
         }
