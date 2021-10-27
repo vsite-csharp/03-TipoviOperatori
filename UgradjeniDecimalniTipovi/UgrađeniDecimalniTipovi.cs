@@ -67,7 +67,7 @@ namespace Vsite.CSharp.TipoviOperatori
 
             d = 5;
 
-            // TODO:038 Varijabli tipa int pridružiti vrijednost prethodno definirane varijable i ispisati njenu vrijednost.
+            // 038 Varijabli tipa int pridružiti vrijednost prethodno definirane varijable i ispisati njenu vrijednost.
 
             int i = 0;
             i = (int)d;
