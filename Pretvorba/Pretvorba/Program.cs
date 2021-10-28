@@ -37,28 +37,30 @@ namespace Vsite.CSharp.TipoviOperatori
             //osobaNuklFiz.NapraviBombu();  //Tretira se kao Osoba te nema tu metodu na rapolaganju.
            
 
-            // TODO:092 Provjeriti koja su od donjih pridruživanja dozvoljena. Modificirajte naredbe tako da prevoditelj ne prijavljuje pogreške.
+            // Provjeriti koja su od donjih pridruživanja dozvoljena. Modificirajte naredbe tako da prevoditelj ne prijavljuje pogreške.
             osobaNuklFiz = nuklFizičar;   //baznome Osoba pridruzujemo izvedeni NuklearniFizičar tip dozvoljeno
-            //nuklFizičar = (NuklearniFizičar)osobaNuklFiz;  //nemoze implicitno ako ocemo obrnut smjer
+            nuklFizičar = (NuklearniFizičar)osobaNuklFiz;  //nemoze implicitno ako ocemo obrnut smjer
+            nuklFizičar.NapraviBombu();
 
-            // TODO:093 Dodati naredbu koja će omogućiti da se na objektu osobaNuklFiz pozove metoda NapraviBombu, pokrenuti program i provjeriti rezultat izvođenja.
-            if (osobaNuklFiz is NuklearniFizičar)
-            {
-                osobaNuklFiz = osobaNuklFiz as NuklearniFizičar;
-                NuklearniFizičar nuklearniFizičar = osobaNuklFiz as NuklearniFizičar;
-                nuklearniFizičar.
-            }
-       
-            // TODO:094 Otkomentirati donje naredbe, provjeriti prijavljuje li program pogreške, pokrenuti program i provjeriti rezultat izvođenja.
-            //Osoba novaOsoba = osobaNuklFiz;
-            //nuklFizičar = (NuklearniFizičar)novaOsoba;
-            //nuklFizičar.Hodaj();
-            //nuklFizičar.NapraviBombu();
+            // Dodati naredbu koja će omogućiti da se na objektu osobaNuklFiz pozove metoda NapraviBombu, pokrenuti program i provjeriti rezultat izvođenja.
+            //if (osobaNuklFiz is NuklearniFizičar)
+            //{
+            //    osobaNuklFiz = osobaNuklFiz as NuklearniFizičar;
+            //    NuklearniFizičar nuklearniFizičar = osobaNuklFiz as NuklearniFizičar;
+            //    nuklearniFizičar.
+            //}
 
-            //novaOsoba = osoba;
-            //nuklFizičar = (NuklearniFizičar)novaOsoba;
-            //nuklFizičar.Hodaj();
-            //nuklFizičar.NapraviBombu();
+            // Otkomentirati donje naredbe, provjeriti prijavljuje li program pogreške, pokrenuti program i provjeriti rezultat izvođenja.
+            Osoba novaOsoba = osobaNuklFiz;
+            nuklFizičar = (NuklearniFizičar)novaOsoba;
+            nuklFizičar.Hodaj();
+            nuklFizičar.NapraviBombu();
+
+            novaOsoba = osoba;
+            // pec
+            nuklFizičar = (NuklearniFizičar)novaOsoba;  //invalid cast exeption
+            nuklFizičar.Hodaj();
+            nuklFizičar.NapraviBombu();
 
 
             Console.ReadKey();
