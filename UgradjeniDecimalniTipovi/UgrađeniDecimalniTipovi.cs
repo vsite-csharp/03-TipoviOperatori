@@ -30,6 +30,11 @@ namespace Vsite.CSharp.TipoviOperatori
             Console.WriteLine("trećina1 = {0:F2}\ntrećina2 = {1:F2}", trećina1, trećina2);
             Console.WriteLine("(trećina1 - trećina1) = {0:F2}\n(trećina1 - trećina2) = {1:F}", trećina1 - trećina1, trećina1 - trećina2);
 
+            trećina1 = 1.0 / 3;
+            trećina2 = (1 - 2 / 3.0);
+            Console.WriteLine(trećina1);
+            Console.WriteLine(trećina2);
+
             // Primjer utjecaja ograničenog raspona na rezultat množenja/dijeljenja
             // 034 Definirati varijablu tipa double s vrijednošću double.MaxValue te ispisati rezultat njenog množenja s 2. Ponoviti to za double.MinValue.
             double max = double.MaxValue;
