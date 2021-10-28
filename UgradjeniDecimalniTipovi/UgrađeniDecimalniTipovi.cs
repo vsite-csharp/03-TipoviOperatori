@@ -28,8 +28,8 @@ namespace Vsite.CSharp.TipoviOperatori
 
             // Primjer binarnog zaokruživanja na rezultat
             // 033 Definirati dvije varijable trećina1 i trećina2 tipa double s vrijednostima 1/3, odn. (1-2/3). Ispisati njihove vrijednosti te razlike (trećina1-trećina1), odn. (trećina1-tećina2).
-            double trecina1=1/3;
-            double trecina2=1-(2/3);
+            double trecina1=1.0/3;
+            double trecina2=1-(2/3.0);
             Console.WriteLine(trecina1);
             Console.WriteLine(trecina2);
             Console.WriteLine(trecina1-trecina1);
