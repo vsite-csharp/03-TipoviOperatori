@@ -12,10 +12,10 @@ namespace Vsite.CSharp.TipoviOperatori
             // TODO:130 Napisati petlju koja će za svaki član kojeg vrati metoda t.GetMembers ispisati ime tog člana.
 
             // TODO:131 Dodati u petlji i ispis tipa svakog člana.
-            //foreach (MemberInfo mi in t.GetMembers())
-            //{
-            //    Console.WriteLine($"{mi.Name} {mi.MemberType.ToString()}");
-            //}
+            foreach (MemberInfo mi in t.GetMembers())
+            {
+                Console.WriteLine($"{mi.Name} {mi.MemberType.ToString()}");
+            }
 
 
             // TODO:132 Dodati petlju koja će za svaki član kojeg vrati metoda GetMethods ispisati ime metode i povratni tip.
@@ -30,6 +30,12 @@ namespace Vsite.CSharp.TipoviOperatori
                 {
                     Console.WriteLine($"  {parameter.ParameterType.ToString()} {parameter.Name}");
                 }
+            }
+            object o = new object();
+            var ytpe = o.GetType();
+            foreach (MemberInfo mi in t.GetMembers())
+            {
+                Console.WriteLine($"{mi.Name} {mi.MemberType.ToString()}");
             }
 
             Console.ReadKey();
