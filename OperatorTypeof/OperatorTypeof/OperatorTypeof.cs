@@ -11,11 +11,14 @@ namespace Vsite.CSharp.TipoviOperatori
 
             Console.WriteLine($"*** Svi članovi klase {t.Name} ***");
 
-            // TODO:130 Pokrenuti program i pogledati što će ispisati donja petlja.
+            // :130 Pokrenuti program i pogledati što će ispisati donja petlja.
             foreach (MemberInfo mi in t.GetMembers())
             {
                 Console.WriteLine($"{mi.Name} {mi.MemberType.ToString()}");
             }
+
+            
+            
 
             Console.WriteLine($"*** Sve metode klase {t.Name} ***");
 
