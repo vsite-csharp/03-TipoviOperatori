@@ -19,7 +19,11 @@ namespace Vsite.CSharp.TipoviOperatori
 
             // Primjer binarnog zaokruživanja na rezultat:
             // TODO:033 Definirati dvije varijable: trećina1 i trećina2, tipa double s vrijednostima koje se izračunavaju pomoću izraza 1/3, odn. (1-2/3). Voditi računa da dijeljenje u tim izrazima ne bude cjelobrojno!
-            
+            double trecina1 = 1.0 / 3;
+            double trecina2 = (1 - 1 / 3);
+            Console.WriteLine(trecina1);
+            Console.WriteLine(trecina2);
+            Console.WriteLine(trecina1 - trecina2);
             // TODO:034 Ispisati vrijednosti varijabli trećina1 i trećina2 te njihove razlike (trećina1-trećina1), odn. (trećina1-tećina2).
 
             // Primjer utjecaja ograničenog raspona na rezultat množenja i dijeljenja:
