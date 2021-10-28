@@ -31,8 +31,8 @@ namespace Vsite.CSharp.TipoviOperatori
             Console.WriteLine($"Second subtraction: {f1 - f3:F2}\n");
             // Primjer binarnog zaokruživanja na rezultat
             // Definirati dvije varijable trećina1 i trećina2 tipa double s vrijednostima 1/3, odn. (1-2/3). Ispisati njihove vrijednosti te razlike (trećina1-trećina1), odn. (trećina1-tećina2).
-            double trećina1 = 1/3;
-            double trećina2 = 1 - 2/3;
+            double trećina1 = 1.0 / 3;
+            double trećina2 = 1 - 2 / 3.0;
             Console.WriteLine($"trećina1 = {trećina1}, trećina2 = {trećina2}");
             Console.WriteLine($"First subtraction: {trećina1 - trećina1}");
             Console.WriteLine($"Second subtraction: {trećina1 - trećina2}\n");
