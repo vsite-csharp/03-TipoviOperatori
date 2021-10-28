@@ -30,7 +30,7 @@ namespace Vsite.CSharp.TipoviOperatori
             s.a = 10232;
             s.b = 3.123454;
             // 068 Napisati naredbu za postavljanje vrijednosti npostojećeg polja c u toj strukturi na proizvoljnu vrijednosti i provjeriti da li se kod može prevesti.
-            s.c = 33;
+            // s.c = 33;
             Console.ReadKey();
         }
     }
