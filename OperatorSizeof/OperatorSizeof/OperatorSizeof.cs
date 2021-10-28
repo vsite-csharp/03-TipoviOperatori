@@ -37,7 +37,7 @@ namespace Vsite.CSharp.TipoviOperatori
             // TODO:120 Napisati naredbu kojom će se ispisati duljina podatka tipa decimal 
 
             // TODO:121 Napisati naredbu kojom će se ispisati duljina podatka tipa double 
-            // TODO:122 Ispisati duljinu tipa MojaStruktura
+            // :122 Ispisati duljinu tipa MojaStruktura
             unsafe
             {
                 Console.WriteLine(sizeof(MojaStruktura));
