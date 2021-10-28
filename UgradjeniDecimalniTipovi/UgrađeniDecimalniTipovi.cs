@@ -27,11 +27,12 @@ namespace Vsite.CSharp.TipoviOperatori
             Console.WriteLine("{0:F2}", f1 - f3);
             // Primjer binarnog zaokruživanja na rezultat
             // 033 Definirati dvije varijable trećina1 i trećina2 tipa double s vrijednostima 1/3, odn. (1-2/3). Ispisati njihove vrijednosti te razlike (trećina1-trećina1), odn. (trećina1-tećina2).
-            double trecina1 = 1 / 3;
+            double trecina1 = 1.0 / 3;
             double trecina2 = 1 - 2.0 / 3;
 
             Console.WriteLine("{0:F20}", trecina1);
             Console.WriteLine("{0:F20}", trecina2);
+            Console.WriteLine("{0:F20}", trecina1 - trecina1);
             Console.WriteLine("{0:F20}", trecina1 - trecina2);
             // Primjer utjecaja ograničenog raspona na rezultat množenja/dijeljenja
             // 034 Definirati varijablu tipa double s vrijednošću double.MaxValue te ispisati rezultat njenog množenja s 2. Ponoviti to za double.MinValue.

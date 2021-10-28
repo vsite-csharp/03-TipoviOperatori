@@ -26,6 +26,7 @@ namespace Vsite.CSharp.TipoviOperatori
             Osoba osoba = new Osoba();
 
             osoba.DajOib();
+
             //Console.WriteLine(osoba.GetHashCode());
             //Console.WriteLine(osoba.GetType());
             //Console.WriteLine(osoba.ToString());
@@ -33,7 +34,7 @@ namespace Vsite.CSharp.TipoviOperatori
             Student student = new Student();
 
             student.DajOib();
-            student.PoložiIspit("Matematika");
+            student.PoložiIspit("Programiranje u C#");
 
             // 081 Dodajte pozive svih mogućih metoda na objektu osobaStudent te pokrenite program.
             Osoba osobaStudent = new Student();
@@ -43,8 +44,8 @@ namespace Vsite.CSharp.TipoviOperatori
             // 082 Pokušajte objektu student pridružiti novi objekt tipa Osoba. Provjerite što prevoditelj javlja.
 
 
-            //student = new Osoba();
-            //student.PoložiIspit("Kemija");
+            //student s = new Osoba();
+            //student.PoložiIspit("Programiranje u C++");
 
             Console.ReadKey();
         }
