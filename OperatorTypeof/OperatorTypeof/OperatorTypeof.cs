@@ -7,15 +7,15 @@ namespace Vsite.CSharp.TipoviOperatori
     {
         static void Main()
         {
-            Type t = typeof(System.DateTime);
+            Type t = typeof(System.DateTime);  // typeOf primjenjujemo na tipove 
 
             // TODO:130 Napisati petlju koja će za svaki član kojeg vrati metoda t.GetMembers ispisati ime tog člana.
 
             // TODO:131 Dodati u petlji i ispis tipa svakog člana.
-            //foreach (MemberInfo mi in t.GetMembers())
-            //{
-            //    Console.WriteLine($"{mi.Name} {mi.MemberType.ToString()}");
-            //}
+            foreach (MemberInfo mi in t.GetMembers())
+            {
+                Console.WriteLine($"{mi.Name} {mi.MemberType.ToString()}");
+            }
 
 
             // TODO:132 Dodati petlju koja će za svaki član kojeg vrati metoda GetMethods ispisati ime metode i povratni tip.
@@ -24,6 +24,18 @@ namespace Vsite.CSharp.TipoviOperatori
 
             // TODO:134 Proširiti tijelo petlje tako da se za svaku metodu ispišu ima li public, protected ili private pravo pristupa.
             foreach (MethodInfo mi in t.GetMethods())
+            {
+                Console.WriteLine($"{mi.ReturnType.ToString()} {mi.Name}");
+                foreach (var parameter in mi.GetParameters())
+                {
+                    Console.WriteLine($"  {parameter.ParameterType.ToString()} {parameter.Name}");
+                }
+            }
+
+            object o = new object();  // TO je bazni tip koji je bazni tip svim tipovima 
+            var type = o.GetType();  // svaki objekt ima ovu metodu
+
+            foreach (MethodInfo mi in type.GetMembers())
             {
                 Console.WriteLine($"{mi.ReturnType.ToString()} {mi.Name}");
                 foreach (var parameter in mi.GetParameters())
