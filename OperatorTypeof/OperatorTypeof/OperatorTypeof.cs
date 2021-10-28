@@ -34,8 +34,17 @@ namespace Vsite.CSharp.TipoviOperatori
                 Console.WriteLine($"{mi.ReturnType.ToString()} {mi.Name}");
                 foreach (var parameter in mi.GetParameters())
                 {
-                    Console.WriteLine($" {parameter.ParameterType.ToString()} {parameter.Name}");
+                    Console.WriteLine($"   {parameter.ParameterType.ToString()} {parameter.Name}");
                 }
+            }
+
+            Console.WriteLine("____________________________________________________________________________");
+
+            object o = new object();
+            var type = o.GetType();
+            foreach (MemberInfo mi in type.GetMembers())
+            {
+                Console.WriteLine($"{mi.Name} {mi.MemberType.ToString()}");
             }
 
             Console.ReadKey();
