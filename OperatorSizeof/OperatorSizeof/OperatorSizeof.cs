@@ -40,7 +40,7 @@ namespace Vsite.CSharp.TipoviOperatori
 
             // :122 Ispisati duljinu tipa MojaStruktura
             unsafe
-            {
+            { 
 
                 Console.WriteLine(sizeof(MojaStruktura));
                 Console.WriteLine(sizeof(MojaSloženaStruktura));
