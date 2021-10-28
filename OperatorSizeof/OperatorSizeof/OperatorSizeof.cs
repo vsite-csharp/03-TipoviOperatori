@@ -46,6 +46,12 @@ namespace Vsite.CSharp.TipoviOperatori
             // Ispisati duljinu tipa MojaSloženaStruktura
             Console.WriteLine("MojaSloženaStruktura duljina " + System.Runtime.InteropServices.Marshal.SizeOf(typeof(MojaSloženaStruktura)));
 
+            unsafe
+            {
+                Console.WriteLine(sizeof(MojaStruktura));
+                Console.WriteLine(sizeof(MojaSloženaStruktura));
+            }
+
             // Ispisati duljinu tipa MojaKlasa
             Console.WriteLine("MojaKlasa duljina " + System.Runtime.InteropServices.Marshal.SizeOf(typeof(MojaKlasa)));
 
