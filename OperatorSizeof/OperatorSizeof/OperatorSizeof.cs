@@ -38,7 +38,12 @@ namespace Vsite.CSharp.TipoviOperatori
 
             // TODO:121 Napisati naredbu kojom će se ispisati duljina podatka tipa double 
 
-            // TODO:122 Ispisati duljinu tipa MojaStruktura
+            // TODO: 122 Ispisati duljinu tipa MojaStruktura - napraviti kasnije
+            //unsafe
+            //{
+            //    Console.WriteLine(sizeof();
+            //}
+
 
             // TODO:123 Ispisati duljinu tipa MojaSloženaStruktura
 
