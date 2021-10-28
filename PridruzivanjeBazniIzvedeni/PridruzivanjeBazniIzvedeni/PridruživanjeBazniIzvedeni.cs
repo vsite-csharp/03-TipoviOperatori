@@ -14,7 +14,8 @@ namespace Vsite.CSharp.TipoviOperatori
     {
         public void PoložiIspit(string predmet)
         {
-            Console.WriteLine($"Ocjena iz predmeta {predmet} je 3");
+            Console.WriteLine($"Ocjena iz predmeta {predmet} je 3 + 2");
+            Console.WriteLine("which equals 5.\nCongratulations!");
         }
     }
 
@@ -22,16 +23,23 @@ namespace Vsite.CSharp.TipoviOperatori
     {
         static void Main()
         {
-            // TODO:080 Dodajte pozive svih mogućih metoda nad objektima osoba i student te pokrenite program.
+            // Dodajte pozive svih mogućih metoda nad objektima osoba i student te pokrenite program.
             Osoba osoba = new Osoba();
+            osoba.DajOib();
 
             Student student = new Student();
+            student.DajOib();
+            student.PoložiIspit("c-sharp");
 
-            // TODO:081 Dodajte pozive svih mogućih metoda na objektu osobaStudent te pokrenite program.
+            // Dodajte pozive svih mogućih metoda na objektu osobaStudent te pokrenite program.
             Osoba osobaStudent = new Student();
+            osobaStudent.DajOib();
+            //osobaStudent.PoloziIspit()  NENE
 
-            // TODO:082 Pokušajte objektu student pridružiti novi objekt tipa Osoba. Provjerite što prevoditelj javlja.
-
+            // Pokušajte objektu student pridružiti novi objekt tipa Osoba. Provjerite što prevoditelj javlja.
+            //student = new Osoba(); //OVO SE TOVE IMPLICITNO KONVERTANJE, NEMORE
+            //student = (Student)new Osoba();   //OVO EKSPLICITNO, unable to cast System.InvalidCastException
+            //student.PoložiIspit("C^2");
 
             Console.ReadKey();
         }
