@@ -22,7 +22,7 @@ namespace Vsite.CSharp.TipoviOperatori
 
             // TODO:133 Proširiti tijelo petlje tako da se za svaku metodu ispišu i njeni parametri(tip i ime parametra).
 
-            // TODO:134 Proširiti tijelo petlje tako da se za svaku metodu ispišu ima li public, protected ili private pravo pristupa.
+            // :134 Proširiti tijelo petlje tako da se za svaku metodu ispišu ima li public, protected ili private pravo pristupa.
             foreach (MethodInfo mi in t.GetMethods())
             {
                 Console.WriteLine($"{mi.ReturnType.ToString()} {mi.Name}");
@@ -32,7 +32,7 @@ namespace Vsite.CSharp.TipoviOperatori
                 }
             }
             object o = new object();
-            var ytpe = o.GetType();
+            var type = o.GetType();
             foreach (MemberInfo mi in t.GetMembers())
             {
                 Console.WriteLine($"{mi.Name} {mi.MemberType.ToString()}");
