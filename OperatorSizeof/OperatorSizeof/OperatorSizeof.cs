@@ -10,6 +10,7 @@ namespace Vsite.CSharp.TipoviOperatori
 
     struct MojaSloženaStruktura
     {
+        //metode ne ulaze u sizeof, njih dijele sve instance
         public void IspišiSe()
         {
             Console.WriteLine(this.ToString());
@@ -38,11 +39,18 @@ namespace Vsite.CSharp.TipoviOperatori
 
             // TODO:121 Napisati naredbu kojom će se ispisati duljina podatka tipa double 
 
-            // TODO:122 Ispisati duljinu tipa MojaStruktura
+            // 122 Ispisati duljinu tipa MojaStruktura
+            unsafe
+            {
+                Console.WriteLine(sizeof(MojaStruktura));
+                Console.WriteLine(sizeof(MojaSloženaStruktura));
 
-            // TODO:123 Ispisati duljinu tipa MojaSloženaStruktura
+                //Console.WriteLine(MojaKlasa); //ne funcionira za heap
+            }
 
-            // TODO:124 Ispisati duljinu tipa MojaKlasa
+            // 123 Ispisati duljinu tipa MojaSloženaStruktura
+
+            // 124 Ispisati duljinu tipa MojaKlasa
 
 
             Console.ReadKey();
