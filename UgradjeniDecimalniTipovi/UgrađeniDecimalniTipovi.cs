@@ -19,7 +19,7 @@ namespace Vsite.CSharp.TipoviOperatori
             decimal decimalMax = decimal.MaxValue;
 
             Console.WriteLine( "Double range: [{0}, {1}]", doubleMin, doubleMax );
-            Console.WriteLine( "Float range: [{0}, {1}]", floatMin, floatMin );
+            Console.WriteLine( "Float range: [{0}, {1}]", floatMin, floatMax );
             Console.WriteLine( "Decimal range: [{0}, {1}]", decimalMin, decimalMax );
 
             // Primjer utjecaja ograničene preciznosti na rezultat oduzimanja/zbrajanja
