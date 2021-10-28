@@ -9,26 +9,32 @@ namespace Vsite.CSharp.TipoviOperatori
         {
             Type t = typeof(System.DateTime);
 
-            // TODO:130 Napisati petlju koja će za svaki član kojeg vrati metoda t.GetMembers ispisati ime tog člana.
+            // :130 Napisati petlju koja će za svaki član kojeg vrati metoda t.GetMembers ispisati ime tog člana.
+            foreach(MemberInfo mi in t.GetMembers())
+                Console.WriteLine(mi.Name);
 
-            // TODO:131 Dodati u petlji i ispis tipa svakog člana.
-            //foreach (MemberInfo mi in t.GetMembers())
-            //{
-            //    Console.WriteLine($"{mi.Name} {mi.MemberType.ToString()}");
-            //}
+            Console.WriteLine("____________________________________________________________________________");
+            // :131 Dodati u petlji i ispis tipa svakog člana.
+            foreach (MemberInfo mi in t.GetMembers())
+            {
+                Console.WriteLine($"{mi.Name} {mi.MemberType.ToString()}");
+            }
+
+            Console.WriteLine("____________________________________________________________________________");
+            // :132 Dodati petlju koja će za svaki član kojeg vrati metoda GetMethods ispisati ime metode i povratni tip.
+            foreach (MemberInfo mi in t.GetMethods())
+                Console.WriteLine($"{mi.Name} {mi.DeclaringType}");
 
 
-            // TODO:132 Dodati petlju koja će za svaki član kojeg vrati metoda GetMethods ispisati ime metode i povratni tip.
-
-            // TODO:133 Proširiti tijelo petlje tako da se za svaku metodu ispišu i njeni parametri(tip i ime parametra).
-
+            Console.WriteLine("____________________________________________________________________________");
+            // :133 Proširiti tijelo petlje tako da se za svaku metodu ispišu i njeni parametri(tip i ime parametra).
             // TODO:134 Proširiti tijelo petlje tako da se za svaku metodu ispišu ima li public, protected ili private pravo pristupa.
             foreach (MethodInfo mi in t.GetMethods())
             {
                 Console.WriteLine($"{mi.ReturnType.ToString()} {mi.Name}");
                 foreach (var parameter in mi.GetParameters())
                 {
-                    Console.WriteLine($"  {parameter.ParameterType.ToString()} {parameter.Name}");
+                    Console.WriteLine($" {parameter.ParameterType.ToString()} {parameter.Name}");
                 }
             }
 
