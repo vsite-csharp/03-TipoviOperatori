@@ -37,27 +37,26 @@ namespace Vsite.CSharp.TipoviOperatori
            
             // Provjeriti koja su od donjih pridruživanja dozvoljena. Modificirajte naredbe tako da prevoditelj ne prijavljuje pogreške.
             osobaNuklFiz = nuklFizičar;
-            nuklFizičar =  osobaNuklFiz as NuklearniFizičar;
+            //nuklFizičar = osobaNuklFiz;
 
             // Dodati naredbu koja će omogućiti da se na objektu osobaNuklFiz pozove metoda NapraviBombu, pokrenuti program i provjeriti rezultat izvođenja.
-            NuklearniFizičar nuklearko = new Osoba();
-            //Osoba novak = osobaNuklFiz;
-            osobaNuklFiz = (NuklearniFizičar)nuklearko;
-            osobaNuklFiz
-            
-            
+            nuklFizičar = osobaNuklFiz as NuklearniFizičar;
+            nuklFizičar.NapraviBombu();
+
+
 
 
             // TODO:094 Otkomentirati donje naredbe, provjeriti prijavljuje li program pogreške, pokrenuti program i provjeriti rezultat izvođenja.
-            /*Osoba novaOsoba = osobaNuklFiz;
+            Osoba novaOsoba = osobaNuklFiz;
             nuklFizičar = (NuklearniFizičar)novaOsoba;
             nuklFizičar.Hodaj();
             nuklFizičar.NapraviBombu();
 
+            // ovo nije dobro
             novaOsoba = osoba;
             nuklFizičar = (NuklearniFizičar)novaOsoba;
             nuklFizičar.Hodaj();
-            nuklFizičar.NapraviBombu();*/
+            nuklFizičar.NapraviBombu();
 
 
             Console.ReadKey();
