@@ -27,20 +27,23 @@ namespace Vsite.CSharp.TipoviOperatori
             NuklearniFizičar nuklFizičar = new NuklearniFizičar();
 
             // :090 Dodati pozive svih mogućih metoda za objekte osoba i nuklFizičar, pokrenuti program i provjeriti rezultat izvođenja.
-            Osoba osobaNuklFiz = new NuklearniFizičar();
             osoba.Hodaj();
             nuklFizičar.Hodaj();
             nuklFizičar.NapraviBombu();
+
+
+            Osoba osobaNuklFiz = new NuklearniFizičar();
 
             // :091 Dodati pozive svih mogućih metoda za objekt osobaNuklFiz, pokrenuti program i provjeriti rezultat.
             osobaNuklFiz.Hodaj();
 
             // :092 Provjeriti koja su od donjih pridruživanja dozvoljena. Modificirajte naredbe tako da prevoditelj ne prijavljuje pogreške.
             osobaNuklFiz = nuklFizičar;
+            //nuklFizičar = osobaNuklFiz;
+
+            // :093 Dodati naredbu koja će omogućiti da se na objektu osobaNuklFiz pozove metoda NapraviBombu, pokrenuti program i provjeriti rezultat izvođenja.
             nuklFizičar = (NuklearniFizičar)osobaNuklFiz;
-
-            // TODO:093 Dodati naredbu koja će omogućiti da se na objektu osobaNuklFiz pozove metoda NapraviBombu, pokrenuti program i provjeriti rezultat izvođenja.
-
+            nuklFizičar.NapraviBombu();
 
             // :094 Otkomentirati donje naredbe, provjeriti prijavljuje li program pogreške, pokrenuti program i provjeriti rezultat izvođenja.
             Osoba novaOsoba = osobaNuklFiz;
@@ -49,7 +52,7 @@ namespace Vsite.CSharp.TipoviOperatori
             nuklFizičar.NapraviBombu();
 
             novaOsoba = osoba;
-            nuklFizičar = (NuklearniFizičar)novaOsoba;
+            nuklFizičar = (NuklearniFizičar)novaOsoba;//system invalid cast exception
             nuklFizičar.Hodaj();
             nuklFizičar.NapraviBombu();
 
