@@ -32,11 +32,13 @@ namespace Vsite.CSharp.TipoviOperatori
             nuklFizičar.Hodaj();
 
             Osoba osobaNuklFiz = new NuklearniFizičar();
+            
             // Dodati pozive svih mogućih metoda za objekt osobaNuklFiz, pokrenuti program i provjeriti rezultat.
             osobaNuklFiz.Hodaj();
            
             // Provjeriti koja su od donjih pridruživanja dozvoljena. Modificirajte naredbe tako da prevoditelj ne prijavljuje pogreške.
             osobaNuklFiz = nuklFizičar;
+   
             //nuklFizičar = osobaNuklFiz;
 
             // Dodati naredbu koja će omogućiti da se na objektu osobaNuklFiz pozove metoda NapraviBombu, pokrenuti program i provjeriti rezultat izvođenja.
