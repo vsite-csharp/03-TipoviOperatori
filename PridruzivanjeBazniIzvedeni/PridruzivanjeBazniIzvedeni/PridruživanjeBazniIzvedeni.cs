@@ -10,6 +10,8 @@ namespace Vsite.CSharp.TipoviOperatori
         }
     }
 
+    //svaki student je osoba, student je izveden iz klase osoba
+    //student nasljeduje sve od klase osobe - metoda dajOib
     class Student : Osoba
     {
         public void PoložiIspit(string predmet)
@@ -22,16 +24,21 @@ namespace Vsite.CSharp.TipoviOperatori
     {
         static void Main()
         {
-            // TODO:080 Dodajte pozive svih mogućih metoda nad objektima osoba i student te pokrenite program.
-            Osoba osoba = new Osoba();
+            // 080 Dodajte pozive svih mogućih metoda nad objektima osoba i student te pokrenite program.
+            Osoba osoba = new Osoba(); //automatski prazni konstruktor
+            osoba.DajOib();
 
             Student student = new Student();
+            student.DajOib();
+            student.PoložiIspit("Ocjena iz predmeta u C#");
 
-            // TODO:081 Dodajte pozive svih mogućih metoda na objektu osobaStudent te pokrenite program.
-            Osoba osobaStudent = new Student();
+            // 081 Dodajte pozive svih mogućih metoda na objektu osobaStudent te pokrenite program.
+            Osoba osobaStudent = new Student(); //pridruzujes baznom tipu izvedeni i kompajler to dopusta
+            osobaStudent.DajOib(); // moze samo dajoib, ali ne i poloziispit
 
-            // TODO:082 Pokušajte objektu student pridružiti novi objekt tipa Osoba. Provjerite što prevoditelj javlja.
-
+            // 082 Pokušajte objektu student pridružiti novi objekt tipa Osoba. Provjerite što prevoditelj javlja.
+            //Student s = new Osoba(); //ne mogu implicitno pretvorititi izvedeni u bazni, kompajler javlja gresku
+            //s.PoložiIspit(); //
 
             Console.ReadKey();
         }
