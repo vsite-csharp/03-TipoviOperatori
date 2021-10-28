@@ -36,22 +36,22 @@ namespace Vsite.CSharp.TipoviOperatori
             //091 Dodati pozive svih mogućih metoda za objekt osobaNuklFiz, pokrenuti program i provjeriti rezultat.
             osobaNuklFiz.Hodaj();
             //092 Provjeriti koja su od donjih pridruživanja dozvoljena. Modificirajte naredbe tako da prevoditelj ne prijavljuje pogreške.
-            osobaNuklFiz = nuklFiz;
+            osobaNuklFiz = nuklFizičar;
             //nuklFizičar = osobaNuklFiz;
 
             //093 Dodati naredbu koja će omogućiti da se na objektu osobaNuklFiz pozove metoda NapraviBombu, pokrenuti program i provjeriti rezultat izvođenja.
             nuklFizičar = (NuklearniFizičar)osobaNuklFiz;
             nuklFizičar.NapraviBombu();
             //094 Otkomentirati donje naredbe, provjeriti prijavljuje li program pogreške, pokrenuti program i provjeriti rezultat izvođenja.
-            Osoba novaosoba = osobanuklfiz;
-            Nuklfizičar = (NuklearniFizičar)novaosoba;
-            nuklFizičar.hodaj();
-            NuklFizičar.napravibombu();
+            Osoba novaosoba = osobaNuklFiz;
+            nuklFizičar = (NuklearniFizičar)novaosoba;
+            nuklFizičar.Hodaj();
+            nuklFizičar.NapraviBombu();
             // ovo nbu dobro završilo
             novaosoba = osoba;
             nuklFizičar = (NuklearniFizičar)novaosoba;
             nuklFizičar.Hodaj();
-            nuklFizičar.napravibombu();
+            nuklFizičar.NapraviBombu();
 
 
             Console.ReadKey();
