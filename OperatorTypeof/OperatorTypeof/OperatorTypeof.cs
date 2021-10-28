@@ -11,23 +11,36 @@ namespace Vsite.CSharp.TipoviOperatori
 
             Console.WriteLine($"*** Svi članovi klase {t.Name} ***");
 
-            // TODO:130 Pokrenuti program i pogledati što će ispisati donja petlja.
+            // :130 Pokrenuti program i pogledati što će ispisati donja petlja.
             foreach (MemberInfo mi in t.GetMembers())
             {
                 Console.WriteLine($"{mi.Name} {mi.MemberType.ToString()}");
             }
 
-            Console.WriteLine($"*** Sve metode klase {t.Name} ***");
+            // :131 Dodati petlju koja će za svaki član kojeg vrati metoda GetMethods ispisati ime metode i povratni tip.
 
-            // TODO:131 Dodati petlju koja će za svaki član kojeg vrati metoda GetMethods ispisati ime metode i povratni tip.
+            // :132 Proširiti tijelo petlje tako da se za svaku metodu ispišu i njeni parametri(tip i ime parametra).
 
-            // TODO:132 Proširiti tijelo petlje tako da se za svaku metodu ispišu i njeni parametri(tip i ime parametra).
+            // :133 Proširiti tijelo petlje tako da se za svaku metodu ispišu ima li public, protected ili private pravo pristupa.
 
-            // TODO:133 Proširiti tijelo petlje tako da se za svaku metodu ispišu ima li public, protected ili private pravo pristupa.
+            // :134 Napisati petlju koja će za donju instancu klase Object ispisati imena svih njenih članova.
 
-            // TODO:134 Napisati petlju koja će za donju instancu klase Object ispisati imena svih njenih članova.
+            foreach (MethodInfo mi in t.GetMethods())
+            {
+                Console.WriteLine($"{mi.ReturnType.ToString()} {mi.Name}");
+                foreach (var parameter in mi.GetParameters())
+                {
+                    Console.WriteLine($"  {parameter.ParameterType.ToString()} {parameter.Name}");
+                }
+            }
+
             object o = new object();
-            Console.WriteLine($"*** Svi članovi instance klase {o.GetType().Name} ***");
+            var type = o.GetType();
+
+            foreach (MemberInfo mi in type.GetMembers())
+            {
+                Console.WriteLine($"{mi.Name} {mi.MemberType.ToString()}");
+            }
 
             Console.ReadKey();
         }
