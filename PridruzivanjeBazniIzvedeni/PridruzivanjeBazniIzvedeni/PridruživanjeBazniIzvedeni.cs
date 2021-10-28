@@ -35,7 +35,7 @@ namespace Vsite.CSharp.TipoviOperatori
             osobaStudent.DajOib();
 
             // :082 Pokušajte objektu student pridružiti novi objekt tipa Osoba. Provjerite što prevoditelj javlja.
-            Student s = new Osoba();
+            //Student s = new Osoba();
 
             Console.ReadKey();
         }
