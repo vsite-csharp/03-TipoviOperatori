@@ -41,10 +41,13 @@ namespace Vsite.CSharp.TipoviOperatori
             Console.WriteLine(sizeof(double));
 
             // :122 Ispisati duljinu tipa MojaStruktura
-            //Console.WriteLine(sizeof(MojaStruktura));
-
+            unsafe
+            {
+                Console.WriteLine(sizeof(MojaStruktura));
+                Console.WriteLine(sizeof(MojaSloženaStruktura));
+            }
             // :123 Ispisati duljinu tipa MojaSloženaStruktura
-            //Console.WriteLine(sizeof(MojaSloženaStruktura));
+            //Console.WriteLine(sizeof(MojaSloženaStruktura)); Line 47
 
             // :124 Ispisati duljinu tipa MojaKlasa
             //Console.WriteLine(sizeof(MojaKlasa));
