@@ -26,10 +26,10 @@ namespace Vsite.CSharp.TipoviOperatori
             foreach (MethodInfo mi in t.GetMethods())
             {
                 Console.WriteLine($"{mi.ReturnType.ToString()} {mi.Name}");
-                foreach (var parameter in mi.GetParameters())
+                /*foreach (var parameter in mi.GetParameters())
                 {
                     Console.WriteLine($"  {parameter.ParameterType.ToString()} {parameter.Name}");
-                }
+                }*/
             }
 
             Console.ReadKey();

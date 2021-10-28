@@ -40,7 +40,12 @@ namespace Vsite.CSharp.TipoviOperatori
             nuklFizičar =  osobaNuklFiz as NuklearniFizičar;
 
             // Dodati naredbu koja će omogućiti da se na objektu osobaNuklFiz pozove metoda NapraviBombu, pokrenuti program i provjeriti rezultat izvođenja.
-            osobaNuklFiz = 
+            NuklearniFizičar nuklearko = new Osoba();
+            //Osoba novak = osobaNuklFiz;
+            osobaNuklFiz = (NuklearniFizičar)nuklearko;
+            osobaNuklFiz
+            
+            
 
 
             // TODO:094 Otkomentirati donje naredbe, provjeriti prijavljuje li program pogreške, pokrenuti program i provjeriti rezultat izvođenja.
