@@ -30,7 +30,7 @@ namespace Vsite.CSharp.TipoviOperatori
             object o = new object();
             Console.WriteLine($"*** Svi članovi instance klase {o.GetType().Name} ***");
 
-            object o = new object();
+            
             var type = o.GetType();
             foreach (MemberInfo mi in t.GetMembers())
             {
