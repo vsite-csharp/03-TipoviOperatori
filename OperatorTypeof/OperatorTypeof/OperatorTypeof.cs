@@ -11,7 +11,7 @@ namespace Vsite.CSharp.TipoviOperatori
 
             Console.WriteLine($"*** Svi članovi klase {t.Name} ***");
 
-            // TODO:130 Pokrenuti program i pogledati što će ispisati donja petlja.
+            //130 Pokrenuti program i pogledati što će ispisati donja petlja.
             foreach (MemberInfo mi in t.GetMembers())
             {
                 Console.WriteLine($"{mi.Name} {mi.MemberType.ToString()}");
@@ -25,7 +25,15 @@ namespace Vsite.CSharp.TipoviOperatori
 
             // TODO:133 Proširiti tijelo petlje tako da se za svaku metodu ispišu ima li public, protected ili private pravo pristupa.
 
-            // TODO:134 Napisati petlju koja će za donju instancu klase Object ispisati imena svih njenih članova.
+            // 134 Napisati petlju koja će za donju instancu klase Object ispisati imena svih njenih članova.
+            foreach (MethodInfo mi in t.GetMethods())
+            {
+                Console.WriteLine($"{ mi.ReturnType.ToString()}{ mi.Name}");
+                foreach(var parametar in mi.GetParameters())
+                {
+                    Console.WriteLine($"{mi.Name} {mi.MemberType.ToString()}");
+                }
+            }
             object o = new object();
             Console.WriteLine($"*** Svi članovi instance klase {o.GetType().Name} ***");
 
