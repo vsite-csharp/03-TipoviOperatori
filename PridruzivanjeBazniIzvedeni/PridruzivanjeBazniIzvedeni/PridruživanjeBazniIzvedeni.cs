@@ -37,6 +37,8 @@ namespace Vsite.CSharp.TipoviOperatori
             osobaStudent.DajOib();
             //osobaStudent.PoložiIspit("Linearna algebra"); It is not possible because it is instance Osoba
 
+            //Student s = new Osoba();  It is not possible BAZNOM MOŽEMO PRIDRUŽITI IZVEDENI 
+
             // 082 Pokušajte objektu student pridružiti novi objekt tipa Osoba. Provjerite što prevoditelj javlja.
 
             //student = new Osoba(); Cannot implicitly convert type 'type1' to 'type2'. An explicit conversion exists (are you missing a cast?)
