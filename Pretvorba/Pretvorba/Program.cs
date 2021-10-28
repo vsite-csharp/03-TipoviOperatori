@@ -44,7 +44,7 @@ namespace Vsite.CSharp.TipoviOperatori
             nuklFizičar = (NuklearniFizičar)osobaNuklFiz;
             nuklFizičar.NapraviBombu();
 
-            // TODO:094 Otkomentirati donje naredbe, provjeriti prijavljuje li program pogreške, pokrenuti program i provjeriti rezultat izvođenja.
+            // Otkomentirati donje naredbe, provjeriti prijavljuje li program pogreške, pokrenuti program i provjeriti rezultat izvođenja.
             Osoba novaOsoba = osobaNuklFiz;
             nuklFizičar = (NuklearniFizičar)novaOsoba;
             nuklFizičar.Hodaj();
