@@ -47,7 +47,7 @@ namespace Vsite.CSharp.TipoviOperatori
             }
 
             //Console.WriteLine(sizeof(MojaKlasa));
-                }
+ 
             // TODO:123 Ispisati duljinu tipa MojaSloženaStruktura
 
             // TODO:124 Ispisati duljinu tipa MojaKlasa
