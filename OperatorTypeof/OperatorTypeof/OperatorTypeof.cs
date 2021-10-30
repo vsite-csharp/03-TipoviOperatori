@@ -26,6 +26,7 @@ namespace Vsite.CSharp.TipoviOperatori
             foreach (MethodInfo mi in t.GetMethods())
             {
                 Console.WriteLine($"{mi.ReturnType.ToString()} {mi.Name}");
+                Console.WriteLine($"{mi.Attributes.ToString().Split()[1]}");
                 foreach (var parameter in mi.GetParameters())
                 {
                     Console.WriteLine($"  {parameter.ParameterType.ToString()} {parameter.Name}");
