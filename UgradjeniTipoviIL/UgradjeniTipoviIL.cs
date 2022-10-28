@@ -12,9 +12,11 @@ namespace Vsite.CSharp.TipoviOperatori
             int i = 5;
             long l = 10;
             l = 4294967296;
+            Console.WriteLine(l);
             float f = 10.3F;
             double dbl = 12.8;
             decimal dec = 134.45M;
+            dec = 13.445M;
             string mirko = "slavko";
         }
     }
