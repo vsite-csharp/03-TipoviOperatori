@@ -39,7 +39,7 @@ namespace Vsite.CSharp.TipoviOperatori
 
 
             // Primjer cjelobrojnog dijeljenja nulom
-            // TODO:028 Definirati varijablu tipa int te dodati naredbu kojom se ta varijabla dijeli s nulom. Pokrenuti program i provjeriti što će se dogoditi.
+            // 028 Definirati varijablu tipa int te dodati naredbu kojom se ta varijabla dijeli s nulom. Pokrenuti program i provjeriti što će se dogoditi.
             int d = 5;
             Console.WriteLine(d / 0);
 
