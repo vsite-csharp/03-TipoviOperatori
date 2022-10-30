@@ -46,17 +46,26 @@ namespace Vsite.CSharp.TipoviOperatori
 
 
             // Primjer utjecaja ograničenog raspona na rezultat množenja i dijeljenja:
-            // TODO:035 Definirati varijablu tipa double s vrijednošću double.MaxValue te ispisati rezultat njenog množenja s 2. Ponoviti to za double.MinValue.
-
+            // 035 Definirati varijablu tipa double s vrijednošću double.MaxValue te ispisati rezultat njenog množenja s 2. Ponoviti to za double.MinValue.
+            double ab = double.MaxValue;
+            Console.WriteLine(ab*2);
+            double abc = double.MinValue;
+            Console.WriteLine(abc * 2);
             // Primjeri neodređenih rezultata dijeljenja:
-            // TODO:036 Provjeriti što će se ispisati kao rezultat dijeljenja pozitivnog broja tipa double s 0 te dijeljenja negativnog broja tipa double s 0.
-
-            // TODO:037 Provjeriti što će se ispisati kao rezultat kada se varijabla tipa double s vrijednošću 0 podijeli s 0.
-
-            // TODO:038 Definirati varijablu tipa double i pridružiti joj vrijednost 5.
-
-            // TODO:039 Varijabli tipa int pridružiti vrijednost prethodno definirane varijable i ispisati njenu vrijednost.
-
+            // 036 Provjeriti što će se ispisati kao rezultat dijeljenja pozitivnog broja tipa double s 0 te dijeljenja negativnog broja tipa double s 0.
+            double prvi = 12;
+            double drugi = -12;
+            Console.WriteLine(prvi / 0);
+            Console.WriteLine(drugi / 0);
+            // 037 Provjeriti što će se ispisati kao rezultat kada se varijabla tipa double s vrijednošću 0 podijeli s 0.
+            double nula = 0;
+            Console.WriteLine(nula / 0);
+            // 038 Definirati varijablu tipa double i pridružiti joj vrijednost 5.
+            double pet = 5;
+            Console.WriteLine(pet);
+            // 039 Varijabli tipa int pridružiti vrijednost prethodno definirane varijable i ispisati njenu vrijednost.
+            //int xy = pet;
+            //Console.WriteLine(xy);
             Console.ReadKey();
         }
     }
