@@ -41,7 +41,6 @@ namespace Vsite.CSharp.TipoviOperatori
             Console.WriteLine(trećina1 - trećina1);
             Console.WriteLine(trećina1 - trećina2);
 
-
             // TODO:034 Ispisati vrijednosti varijabli trećina1 i trećina2 te njihove razlike (trećina1-trećina1), odn. (trećina1-tećina2).
 
             // Primjer utjecaja ograničenog raspona na rezultat množenja i dijeljenja:
