@@ -44,16 +44,31 @@ namespace Vsite.CSharp.TipoviOperatori
             Console.WriteLine(trecina1 - trecina2);
 
             // Primjer utjecaja ograničenog raspona na rezultat množenja i dijeljenja:
-            // TODO:035 Definirati varijablu tipa double s vrijednošću double.MaxValue te ispisati rezultat njenog množenja s 2. Ponoviti to za double.MinValue.
+            // 035 Definirati varijablu tipa double s vrijednošću double.MaxValue te ispisati rezultat njenog množenja s 2. Ponoviti to za double.MinValue.
+            double maxDouble = double.MaxValue;
+            Console.WriteLine(maxDouble * 2);
+
+            double minDouble = double.MinValue;
+            Console.WriteLine(minDouble * 2);
 
             // Primjeri neodređenih rezultata dijeljenja:
-            // TODO:036 Provjeriti što će se ispisati kao rezultat dijeljenja pozitivnog broja tipa double s 0 te dijeljenja negativnog broja tipa double s 0.
+            // 036 Provjeriti što će se ispisati kao rezultat dijeljenja pozitivnog broja tipa double s 0 te dijeljenja negativnog broja tipa double s 0.
+            double pozitivniDouble = 3;
+            Console.WriteLine(pozitivniDouble / 0);
 
-            // TODO:037 Provjeriti što će se ispisati kao rezultat kada se varijabla tipa double s vrijednošću 0 podijeli s 0.
+            double negativniDouble = -9;
+            Console.WriteLine(negativniDouble / 0);
 
-            // TODO:038 Definirati varijablu tipa double i pridružiti joj vrijednost 5.
+            // 037 Provjeriti što će se ispisati kao rezultat kada se varijabla tipa double s vrijednošću 0 podijeli s 0.
+            double nulaDouble = 0;
+            Console.WriteLine(nulaDouble / 0);
 
-            // TODO:039 Varijabli tipa int pridružiti vrijednost prethodno definirane varijable i ispisati njenu vrijednost.
+            // 038 Definirati varijablu tipa double i pridružiti joj vrijednost 5.
+            double petDouble = 5;
+
+            // 039 Varijabli tipa int pridružiti vrijednost prethodno definirane varijable i ispisati njenu vrijednost.
+            int petInt = (int)petDouble;
+            Console.WriteLine(petInt);
 
             Console.ReadKey();
         }
