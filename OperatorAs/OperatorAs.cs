@@ -49,6 +49,7 @@ namespace Vsite.CSharp.TipoviOperatori
             if (janko is Student)
             {
                 Student studentJanko = (Student)janko;
+                studentJanko.GetHashCode();
                 // iskoristi studenta unutar bloka
             }
         }
@@ -62,6 +63,7 @@ namespace Vsite.CSharp.TipoviOperatori
             Student studentJanko = janko as Student;
             if (studentJanko != null)
             {
+                Console.WriteLine("janko nije student");
             }
         }
     }
