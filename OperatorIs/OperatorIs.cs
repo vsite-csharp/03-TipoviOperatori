@@ -10,14 +10,15 @@ namespace Vsite.CSharp.TipoviOperatori
     {
         static void Main()
         {
-            // TODO:100 Dodajte provjere za objekt osoba je li tipa Osoba i tipa Student te ispišite rezultate.
+            // 100 Dodajte provjere za objekt osoba je li tipa Osoba i tipa Student te ispišite rezultate.
             Osoba osoba = new Osoba();
+            Console.WriteLine(osoba is Osoba);
+            Console.WriteLine(osoba is Student);
 
-
-            // TODO:101 Dodajte provjere za objekt janko je li tipa Osoba i tipa Student te ispišite rezultate.
+            // 101 Dodajte provjere za objekt janko je li tipa Osoba i tipa Student te ispišite rezultate.
             Osoba janko = new Student();
-
-
+            Console.WriteLine(janko is Osoba);
+            Console.WriteLine(janko is Student); //oba je tipa jer se gleda samo da je new Student() koji je izvedeni
             Console.ReadKey();
         }
     }
