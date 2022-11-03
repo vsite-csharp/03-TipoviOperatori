@@ -23,7 +23,7 @@ namespace Vsite.CSharp.TipoviOperatori
     {
         static void Main()
         {
-            Osoba osoba = new Osoba();
+            Osoba osoba = new Osoba();            
             NuklearniFizičar nuklFizičar = new NuklearniFizičar();
 
             // Dodati pozive svih mogućih metoda za objekte osoba i nuklFizičar, pokrenuti program i provjeriti rezultat izvođenja.
