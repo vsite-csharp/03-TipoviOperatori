@@ -24,14 +24,20 @@ namespace Vsite.CSharp.TipoviOperatori
         {
             // TODO:080 Dodajte pozive svih mogućih metoda nad objektima osoba i student te pokrenite program.
             Osoba osoba = new Osoba();
-
+            osoba.DajOib();
+            osoba.ToString();
+            
             Student student = new Student();
-
+            student.PoložiIspit("Matematika");
+            student.DajOib();
+            student.ToString();
+            
             // TODO:081 Dodajte pozive svih mogućih metoda na objektu osobaStudent te pokrenite program.
             Osoba osobaStudent = new Student();
+            osobaStudent.DajOib();
 
             // TODO:082 Pokušajte objektu student pridružiti novi objekt tipa Osoba. Provjerite što prevoditelj javlja.
-
+            //astudent = osoba;
 
             Console.ReadKey();
         }
