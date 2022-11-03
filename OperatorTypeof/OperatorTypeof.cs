@@ -11,7 +11,7 @@ namespace Vsite.CSharp.TipoviOperatori
 
             Console.WriteLine($"*** Svi članovi klase {t.Name} ***");
 
-            // TODO:130 Pokrenuti program i pogledati što će ispisati donja petlja.
+            // :130 Pokrenuti program i pogledati što će ispisati donja petlja.
             foreach (MemberInfo mi in t.GetMembers())
             {
                 Console.WriteLine($"{mi.Name} {mi.MemberType.ToString()}");
@@ -19,9 +19,17 @@ namespace Vsite.CSharp.TipoviOperatori
 
             Console.WriteLine($"*** Sve metode klase {t.Name} ***");
 
-            // TODO:131 Dodati petlju koja će za svaki član kojeg vrati metoda GetMethods ispisati ime metode i povratni tip.
+            // :131 Dodati petlju koja će za svaki član kojeg vrati metoda GetMethods ispisati ime metode i povratni tip.
+            foreach (var mi in t.GetMethods())
+            {
+                Console.WriteLine($"Ime: {mi.Name}, povratni tip: {mi.ReturnType}");
+                foreach (var par in mi.GetParameters())
+                {
+                    Console.WriteLine($"  Tip parametra: {par.ParameterType}, ime: {par.Name}");
+                }
+            }
 
-            // TODO:132 Proširiti tijelo petlje tako da se za svaku metodu ispišu i njeni parametri(tip i ime parametra).
+            // :132 Proširiti tijelo petlje tako da se za svaku metodu ispišu i njeni parametri(tip i ime parametra).
 
             // TODO:133 Proširiti tijelo petlje tako da se za svaku metodu ispišu ima li public, protected ili private pravo pristupa.
 
