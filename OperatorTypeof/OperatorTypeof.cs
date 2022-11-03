@@ -17,9 +17,17 @@ namespace Vsite.CSharp.TipoviOperatori
                 Console.WriteLine($"{mi.Name} {mi.MemberType.ToString()}");
             }
 
-            Console.WriteLine($"*** Sve metode klase {t.Name} ***");
+            Console.WriteLine($"#####*** Sve metode klase {t.Name} ***#####");
 
             // TODO:131 Dodati petlju koja će za svaki član kojeg vrati metoda GetMethods ispisati ime metode i povratni tip.
+
+            foreach (MethodInfo method in t.GetMethods()) {
+                String parameters = "";
+                foreach (ParameterInfo parameter in method.GetParameters()) {
+                    parameters += " " + parameter.Name+",";
+                }
+                Console.WriteLine(method.MemberType + " " + method.ReturnType+ " " + method.Name + "(" + parameters + ")");
+            }
 
             // TODO:132 Proširiti tijelo petlje tako da se za svaku metodu ispišu i njeni parametri(tip i ime parametra).
 
