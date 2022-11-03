@@ -13,6 +13,7 @@ namespace Vsite.CSharp.TipoviOperatori
         static void Main()
         {
             // TODO:060 Definirati varijablu "i0" tipa var i inicijalizirati ju nekim cijelim brojem.
+            
 
             // TODO:061 Definirati varijablu "d0" tipa var i inicijalizirati ju nekim decimalnim brojem.
 
