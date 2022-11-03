@@ -52,6 +52,7 @@ namespace Vsite.CSharp.TipoviOperatori
             unsafe
             {
                 Console.WriteLine(sizeof(MojaSloženaStruktura));
+            }
 
             // 124 Ispisati duljinu tipa MojaKlasa
             //} unsafe
