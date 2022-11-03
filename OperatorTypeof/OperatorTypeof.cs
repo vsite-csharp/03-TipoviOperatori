@@ -11,7 +11,7 @@ namespace Vsite.CSharp.TipoviOperatori
 
             Console.WriteLine($"*** Svi članovi klase {t.Name} ***");
 
-            // TODO:130 Pokrenuti program i pogledati što će ispisati donja petlja.
+            // :130 Pokrenuti program i pogledati što će ispisati donja petlja.
             foreach (MemberInfo mi in t.GetMembers())
             {
                 Console.WriteLine($"{mi.Name} {mi.MemberType.ToString()}");
@@ -20,6 +20,11 @@ namespace Vsite.CSharp.TipoviOperatori
             Console.WriteLine($"*** Sve metode klase {t.Name} ***");
 
             // TODO:131 Dodati petlju koja će za svaki član kojeg vrati metoda GetMethods ispisati ime metode i povratni tip.
+            foreach (var ni in t.GetMethods())
+            {
+                Console.WriteLine($"Ime: {ni.Name}, povratni tip: {ni.ReturnType} ");
+                
+            }
 
             // TODO:132 Proširiti tijelo petlje tako da se za svaku metodu ispišu i njeni parametri(tip i ime parametra).
 
