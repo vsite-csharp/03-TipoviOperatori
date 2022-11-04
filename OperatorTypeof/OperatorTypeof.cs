@@ -38,7 +38,7 @@ namespace Vsite.CSharp.TipoviOperatori
             foreach (MemberInfo mi in o.GetType().GetMembers()) {
                 Console.WriteLine($"{mi.Name}");
             }
-
+			//	ne mogu pushat
             Console.ReadKey();
 		}
 	}
