@@ -26,16 +26,35 @@ namespace Vsite.CSharp.TipoviOperatori
                 foreach(var par in mi.GetParameters())
                 {
                     Console.WriteLine($"  Tip parametra: {par.ParameterType}, naziv: {par.Name}");
+                    if (mi.IsFamily)
+                    {
+                        Console.WriteLine($"  Metoda je protected");
+                    }
+                    else if (mi.IsPrivate)
+                    {
+                        Console.WriteLine($"  Metoda je private");
+                    }
+                    else if (mi.IsPublic)
+                    {
+                        Console.WriteLine($"  Metoda je public");
+                    }
+
                 }
             }
 
             // 132 Proširiti tijelo petlje tako da se za svaku metodu ispišu i njeni parametri(tip i ime parametra).
 
-            // TODO:133 Proširiti tijelo petlje tako da se za svaku metodu ispišu ima li public, protected ili private pravo pristupa.
+            // 133 Proširiti tijelo petlje tako da se za svaku metodu ispišu ima li public, protected ili private pravo pristupa.
 
-            // TODO:134 Napisati petlju koja će za donju instancu klase Object ispisati imena svih njenih članova.
+            // 134 Napisati petlju koja će za donju instancu klase Object ispisati imena svih njenih članova.
             object o = new object();
+
             Console.WriteLine($"*** Svi članovi instance klase {o.GetType().Name} ***");
+
+            foreach(MemberInfo mi in o.GetType().GetMembers())
+            {
+                Console.WriteLine($"  Naziv člana: {mi.Name}");
+            }
 
             Console.ReadKey();
         }
