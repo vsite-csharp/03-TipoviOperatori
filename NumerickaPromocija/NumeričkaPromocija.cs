@@ -6,7 +6,9 @@ namespace Vsite.CSharp.TipoviOperatori
     {
         static void Main()
         {
-            // TODO:040 Definirati dvije varijable tipa int i provjeriti kojeg tipa je njihov kvocijent.
+            // 040 Definirati dvije varijable tipa int i provjeriti kojeg tipa je njihov kvocijent.
+            int a = 4;
+            int b = 5;
 
             // TODO:041 Dijeljitelj i/ili dijeljenik u gornjem izrazu modificirati tako da dijeljenje bude s ostatkom.
 
