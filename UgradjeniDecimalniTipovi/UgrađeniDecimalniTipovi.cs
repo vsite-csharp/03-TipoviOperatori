@@ -29,22 +29,32 @@ namespace Vsite.CSharp.TipoviOperatori
             // :033 Definirati dvije varijable: trećina1 i trećina2, tipa double s vrijednostima koje se izračunavaju pomoću izraza 1/3, odn. (1-2/3). Voditi računa da dijeljenje u tim izrazima ne bude cjelobrojno!
             double trecina1 = 1.0 / 3;
             double trecina2 = (1-2.0/3);
-            // TODO:034 Ispisati vrijednosti varijabli trećina1 i trećina2 te njihove razlike (trećina1-trećina1), odn. (trećina1-tećina2).
+            // :034 Ispisati vrijednosti varijabli trećina1 i trećina2 te njihove razlike (trećina1-trećina1), odn. (trećina1-tećina2).
             Console.WriteLine(trecina1);
             Console.WriteLine(trecina2);
             Console.WriteLine(trecina1-trecina2);
             // Primjer utjecaja ograničenog raspona na rezultat množenja i dijeljenja:
-            // TODO:035 Definirati varijablu tipa double s vrijednošću double.MaxValue te ispisati rezultat njenog množenja s 2. Ponoviti to za double.MinValue.
-
+            // :035 Definirati varijablu tipa double s vrijednošću double.MaxValue te ispisati rezultat njenog množenja s 2. Ponoviti to za double.MinValue.
+            double i1 = double.MaxValue * 2;
+            Console.WriteLine(i1);
+            double i2= double.MinValue * 2;
+            Console.WriteLine(i2);
             // Primjeri neodređenih rezultata dijeljenja:
-            // TODO:036 Provjeriti što će se ispisati kao rezultat dijeljenja pozitivnog broja tipa double s 0 te dijeljenja negativnog broja tipa double s 0.
+            // :036 Provjeriti što će se ispisati kao rezultat dijeljenja pozitivnog broja tipa double s 0 te dijeljenja negativnog broja tipa double s 0.
+            double i3 = 2.0 / 0;
+            Console.WriteLine(i3);
+            double i4 = -2.0 / 0;
+            Console.WriteLine(i4);
+            // :037 Provjeriti što će se ispisati kao rezultat kada se varijabla tipa double s vrijednošću 0 podijeli s 0.
+            double i5 = 0;
+            Console.WriteLine(i5/0);
+            // :038 Definirati varijablu tipa double i pridružiti joj vrijednost 5.
+            double i6 = 5;
 
-            // TODO:037 Provjeriti što će se ispisati kao rezultat kada se varijabla tipa double s vrijednošću 0 podijeli s 0.
-
-            // TODO:038 Definirati varijablu tipa double i pridružiti joj vrijednost 5.
-
-            // TODO:039 Varijabli tipa int pridružiti vrijednost prethodno definirane varijable i ispisati njenu vrijednost.
-
+            Console.WriteLine(i6);
+            // :039 Varijabli tipa int pridružiti vrijednost prethodno definirane varijable i ispisati njenu vrijednost.
+            //int i7 = i6;
+            //Console.WriteLine(i7);
             Console.ReadKey();
         }
     }
