@@ -45,8 +45,8 @@
             // 038 Definirati varijablu tipa double i pridružiti joj vrijednost 5.
             double d = 5;
             // 039 Varijabli tipa int pridružiti vrijednost prethodno definirane varijable i ispisati njenu vrijednost.
-            int v = d; // javit će se greška
-            Console.WriteLine(v);
+            //int v = d; // javit će se greška
+            //Console.WriteLine(v);
             Console.ReadKey();
         }
     }
