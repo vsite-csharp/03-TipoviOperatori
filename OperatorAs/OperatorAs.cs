@@ -4,15 +4,25 @@ namespace Vsite.CSharp.TipoviOperatori
 {
     class Osoba { }
 
-    class Student : Osoba { }
+    class Student : Osoba {
+        public void JaSamStudent()
+        {
+            Console.WriteLine("Ja sam student");
+        }
+    }
 
-    class Radnik : Osoba { }
+    class Radnik : Osoba {
+        public void JaSamRadnik()
+        {
+            Console.WriteLine("Ja sam radnik");
+        }
+    }
 
     class Program
     {
         static void Main()
         {
-            // TODO:110 Pokrenuti program i provjeriti što će se ispisati te koja će iznimka biti bačena.
+            // :110 Pokrenuti program i provjeriti što će se ispisati te koja će iznimka biti bačena.
             Osoba janko = new Student();
             Student jankoStudent = janko as Student;
             if (jankoStudent != null)
@@ -28,7 +38,7 @@ namespace Vsite.CSharp.TipoviOperatori
 
             try
             {
-                jankoSljaker = (Radnik)janko;
+                jankoSljaker = (Radnik)janko; //can't cast type Student to type Radnik!!!
             }
             catch (Exception e)
             {
@@ -39,7 +49,7 @@ namespace Vsite.CSharp.TipoviOperatori
             Console.ReadKey();
         }
 
-        // TODO:111 Pogledati donje pretvorbe i razjasniti razliku.
+        // :111 Pogledati donje pretvorbe i razjasniti razliku.
 
         // ovo je česti način pisanja kada želimo napraviti "sigurnu" pretvorbu:
         static void Pretvorba1()
@@ -50,6 +60,7 @@ namespace Vsite.CSharp.TipoviOperatori
             {
                 Student studentJanko = (Student)janko;
                 // iskoristi studenta unutar bloka
+                studentJanko.JaSamStudent();
             }
         }
 
@@ -62,6 +73,7 @@ namespace Vsite.CSharp.TipoviOperatori
             Student studentJanko = janko as Student;
             if (studentJanko != null)
             {
+                studentJanko.JaSamStudent();
             }
         }
     }
