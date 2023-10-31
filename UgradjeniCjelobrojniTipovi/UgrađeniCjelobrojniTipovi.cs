@@ -36,7 +36,7 @@ namespace Vsite.CSharp.TipoviOperatori
             int f = 1;
             //int g = f / 0;
             //Console.Write(g);
-            Console.ReadKey();
+            Console.ReadKey(); 
         }
     }
 }
