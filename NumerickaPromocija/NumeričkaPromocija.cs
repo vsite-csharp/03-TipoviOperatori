@@ -28,7 +28,7 @@ namespace Vsite.CSharp.TipoviOperatori
             decimal g = 0.3m;
             //Console.Write(g + f);
 
-            Console.ReadKey();
+            Console.ReadKey(); 
         }
     }
 }

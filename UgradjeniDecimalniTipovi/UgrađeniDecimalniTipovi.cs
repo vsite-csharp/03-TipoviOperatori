@@ -52,6 +52,6 @@ namespace Vsite.CSharp.TipoviOperatori
             Console.WriteLine(x);
             Console.ReadKey();
             Console.ReadKey();
-        }
+         
     }
 }
