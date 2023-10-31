@@ -34,8 +34,8 @@ namespace Vsite.CSharp.TipoviOperatori
             // Primjer cjelobrojnog dijeljenja nulom
             // :028 Definirati varijablu tipa int te dodati naredbu kojom se ta varijabla dijeli s nulom. Pokrenuti program i provjeriti što će se dogoditi.
             int f = 1;
-            int g = f / 0;
-            Console.Write(g);
+            //int g = f / 0;
+            //Console.Write(g);
             Console.ReadKey();
         }
     }
