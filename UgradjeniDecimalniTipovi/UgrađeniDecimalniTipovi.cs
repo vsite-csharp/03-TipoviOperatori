@@ -35,17 +35,22 @@ namespace Vsite.CSharp.TipoviOperatori
             Console.WriteLine(trećina2);
             Console.WriteLine(trećina1 - trećina2);
             // Primjer utjecaja ograničenog raspona na rezultat množenja i dijeljenja:
-            // TODO:035 Definirati varijablu tipa double s vrijednošću double.MaxValue te ispisati rezultat njenog množenja s 2. Ponoviti to za double.MinValue.
-
+            // 035 Definirati varijablu tipa double s vrijednošću double.MaxValue te ispisati rezultat njenog množenja s 2. Ponoviti to za double.MinValue.
+            double num = double.MaxValue;
+            Console.WriteLine(num * 2);
+            double num2 = double.MinValue;
+            Console.WriteLine(num2 * 2);
             // Primjeri neodređenih rezultata dijeljenja:
-            // TODO:036 Provjeriti što će se ispisati kao rezultat dijeljenja pozitivnog broja tipa double s 0 te dijeljenja negativnog broja tipa double s 0.
-
-            // TODO:037 Provjeriti što će se ispisati kao rezultat kada se varijabla tipa double s vrijednošću 0 podijeli s 0.
-
-            // TODO:038 Definirati varijablu tipa double i pridružiti joj vrijednost 5.
-
-            // TODO:039 Varijabli tipa int pridružiti vrijednost prethodno definirane varijable i ispisati njenu vrijednost.
-
+            // 036 Provjeriti što će se ispisati kao rezultat dijeljenja pozitivnog broja tipa double s 0 te dijeljenja negativnog broja tipa double s 0.
+            Console.WriteLine(34.5 / 0);
+            Console.WriteLine(-7.8 / 0);
+            // 037 Provjeriti što će se ispisati kao rezultat kada se varijabla tipa double s vrijednošću 0 podijeli s 0.
+            Console.WriteLine(0.0 / 0);
+            // 038 Definirati varijablu tipa double i pridružiti joj vrijednost 5.
+            double num3 = 5;
+            // 039 Varijabli tipa int pridružiti vrijednost prethodno definirane varijable i ispisati njenu vrijednost.
+            int num4 = (int)num3;
+            Console.WriteLine(num4);
             Console.ReadKey();
         }
     }
