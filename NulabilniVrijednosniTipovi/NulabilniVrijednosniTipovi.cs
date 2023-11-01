@@ -19,7 +19,7 @@ namespace Vsite.CSharp.TipoviOperatori
             // TODO:052 Postaviti vrijednost varijable nulabilniDuplić na konačnu vrijednost te ispisati sadržaj.
 
             // TODO:053 Ponovno pokušati pridružiti varijabli običniDuplić vrijednost varijable nulabilniDuplić.
-
+              
             Console.ReadKey();
         }
     }
