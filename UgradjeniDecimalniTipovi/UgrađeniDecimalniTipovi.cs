@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -34,16 +35,37 @@ namespace Vsite.CSharp.TipoviOperatori
             Console.WriteLine(trecina2);
             Console.WriteLine(trecina1 - trecina2);
             // Primjer utjecaja ograničenog raspona na rezultat množenja i dijeljenja:
-            // TODO:035 Definirati varijablu tipa double s vrijednošću double.MaxValue te ispisati rezultat njenog množenja s 2. Ponoviti to za double.MinValue.
+            // 035 Definirati varijablu tipa double s vrijednošću double.MaxValue te ispisati rezultat njenog množenja s 2. Ponoviti to za double.MinValue.
+            double doublemax = double.MaxValue;
+            double doublemin = double.MinValue;
 
+            double doublemaxmn = doublemax * 2;
+            double doubleminmn = doublemin * 2;
+
+            Console.WriteLine($"doublemax: {doublemaxmn}");
+            Console.WriteLine($"doublemin: {doubleminmn}");
             // Primjeri neodređenih rezultata dijeljenja:
-            // TODO:036 Provjeriti što će se ispisati kao rezultat dijeljenja pozitivnog broja tipa double s 0 te dijeljenja negativnog broja tipa double s 0.
+            // 036 Provjeriti što će se ispisati kao rezultat dijeljenja pozitivnog broja tipa double s 0 te dijeljenja negativnog broja tipa double s 0.
+            double positive = 7;
+            double negative = -7;
 
-            // TODO:037 Provjeriti što će se ispisati kao rezultat kada se varijabla tipa double s vrijednošću 0 podijeli s 0.
+            double positive0 = positive / 0;
+            double negative0 = negative / 0;
 
-            // TODO:038 Definirati varijablu tipa double i pridružiti joj vrijednost 5.
+            Console.WriteLine($"positive: {positive0}");
+            Console.WriteLine($"negative: {negative0}");
+            // 037 Provjeriti što će se ispisati kao rezultat kada se varijabla tipa double s vrijednošću 0 podijeli s 0.
+            double zero = 0;
 
-            // TODO:039 Varijabli tipa int pridružiti vrijednost prethodno definirane varijable i ispisati njenu vrijednost.
+            double zero0 = zero / 0;
+
+            Console.WriteLine($"zero: {zero0}");
+            // 038 Definirati varijablu tipa double i pridružiti joj vrijednost 5.
+            double doublevar;
+            doublevar = 5;
+            // 039 Varijabli tipa int pridružiti vrijednost prethodno definirane varijable i ispisati njenu vrijednost.
+            int intvar;
+            //intvar = doublevar; - int ne može sadržavati decimalnu vrijednost
 
             Console.ReadKey();
         }

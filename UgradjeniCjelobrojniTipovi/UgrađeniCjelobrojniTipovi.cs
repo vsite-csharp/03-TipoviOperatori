@@ -9,7 +9,6 @@ namespace Vsite.CSharp.TipoviOperatori
             // 020 Otkomentirati donje naredbe koje ispisuju najveće brojeve koji se mogu pohraniti u tip int odn. long.
             Console.WriteLine(int.MaxValue);
             Console.WriteLine(long.MaxValue);
-
             // 021 Dodati naredbe koje će ispisati najmanje brojeve koji se mogu pohraniti u tip int odn. u tip long.
             Console.WriteLine(int.MinValue); 
             Console.WriteLine(long.MinValue);
