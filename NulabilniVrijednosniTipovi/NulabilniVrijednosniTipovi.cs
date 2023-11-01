@@ -29,7 +29,7 @@ namespace Vsite.CSharp.TipoviOperatori
             // TODO:054 Otkomentirati donje naredbe, provjeriti prevodi li se kod, pogledati upozorenja te pokrenuti program i provjeriti ispis.
             // TODO:055 Deklarirati mk da je nulabilni tip te ponoviti gornje korake.
             // TODO:056 Ispred drugog poziva za ispis dodati provjeru je li mk inicijaliziran te ispis napraviti samo u tom slučaju.
-            //MojaKlasa? mk = new MojaKlasa();
+            //MojaKlasa mk = new MojaKlasa();
 
             //Console.WriteLine(mk.a);
 
