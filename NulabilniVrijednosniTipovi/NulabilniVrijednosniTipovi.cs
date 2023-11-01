@@ -12,7 +12,7 @@ namespace Vsite.CSharp.TipoviOperatori
             double običniDuplić = Math.PI;
             Console.WriteLine(običniDuplić);
 
-            // TODO:050  Dodati naredbu kojom se vrijednost nulabilniDuplić postavlja na null referencu te ispisati nakon toga sadržaj varijable.
+            // TODO:050 Dodati naredbu kojom se vrijednost nulabilniDuplić postavlja na null referencu te ispisati nakon toga sadržaj varijable.
 
             // TODO:051 Pridružiti varijabli običniDuplić vrijednost varijable nulabilniDuplić. Provjeriti što će se dogoditi.
 
