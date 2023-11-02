@@ -10,19 +10,19 @@
     {
         static void Main()
         {
-            // TODO:110 Pokrenuti program i provjeriti što će se ispisati te koja će iznimka biti bačena.
+            // ODO:110 Pokrenuti program i provjeriti što će se ispisati te koja će iznimka biti bačena.
             Osoba janko = new Student();
             Student jankoStudent = janko as Student;
             if (jankoStudent != null)
                 Console.WriteLine(jankoStudent);
             else
-                Console.WriteLine("null");
+                Console.WriteLine("nullStud");
 
             Radnik jankoSljaker = janko as Radnik;
             if (jankoSljaker != null)
                 Console.WriteLine(jankoSljaker);
             else
-                Console.WriteLine("null");
+                Console.WriteLine("nullRad");
 
             try
             {
@@ -37,7 +37,7 @@
             Console.ReadKey();
         }
 
-        // TODO:111 Pogledati donje pretvorbe i razjasniti razliku.
+        // ODO:111 Pogledati donje pretvorbe i razjasniti razliku.
 
         // ovo je česti način pisanja kada želimo napraviti "sigurnu" pretvorbu:
         static void Pretvorba1()

@@ -13,7 +13,7 @@
             Console.WriteLine(osoba is Osoba);
             Console.WriteLine(osoba is Student);
 
-            // TODO:101 Dodajte provjere za objekt janko je li tipa Osoba i tipa Student te ispišite rezultate.
+            // ODO:101 Dodajte provjere za objekt janko je li tipa Osoba i tipa Student te ispišite rezultate.
             Osoba janko = new Student();
             Console.WriteLine(janko is Osoba);
             Console.WriteLine(janko is Student);
