@@ -9,7 +9,7 @@ namespace Vsite.CSharp.TipoviOperatori
             // 040 Definirati dvije varijable tipa int i provjeriti kojeg tipa je njihov kvocijent.
             int a = 4;
             int b = 5;
-
+            
             // TODO:041 Dijeljitelj i/ili dijeljenik u gornjem izrazu modificirati tako da dijeljenje bude s ostatkom.
 
             // TODO:042 Definirati varijablu tipa int s vrijednošću int.MaxValue i jednu varijablu tipa long s vrijednošću 1. Ispisati vrijednosti tih varijabli i njihov zbroj.
