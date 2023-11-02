@@ -20,16 +20,18 @@
     {
         static void Main()
         {
-            // TODO:080 Dodajte pozive svih mogućih metoda nad objektima osoba i student te pokrenite program.
+            // :080 Dodajte pozive svih mogućih metoda nad objektima osoba i student te pokrenite program.
             Osoba osoba = new Osoba();
-
+            osoba.DajOib();
             Student student = new Student();
-
-            // TODO:081 Dodajte pozive svih mogućih metoda na objektu osobaStudent te pokrenite program.
+            student.DajOib();
+            student.PoložiIspit("C#");
+            // :081 Dodajte pozive svih mogućih metoda na objektu osobaStudent te pokrenite program.
             Osoba osobaStudent = new Student();
+            osobaStudent.DajOib();
 
-            // TODO:082 Pokušajte objektu student pridružiti novi objekt tipa Osoba. Provjerite što prevoditelj javlja.
-
+            // :082 Pokušajte objektu student pridružiti novi objekt tipa Osoba. Provjerite što prevoditelj javlja.
+            //Student s = new Osoba();
 
             Console.ReadKey();
         }
