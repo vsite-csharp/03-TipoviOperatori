@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Vsite.CSharp.TipoviOperatori
+﻿namespace Vsite.CSharp.TipoviOperatori
 {
     struct S
     {
@@ -8,7 +6,7 @@ namespace Vsite.CSharp.TipoviOperatori
         public double b;
     }
 
-    class Program
+    static class Program
     {
         static void Main()
         {
