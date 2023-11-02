@@ -44,9 +44,9 @@ namespace Vsite.CSharp.TipoviOperatori
             // Primjeri neodređenih rezultata dijeljenja:
             // 036 Provjeriti što će se ispisati kao rezultat dijeljenja pozitivnog broja tipa double s 0 te dijeljenja negativnog broja tipa double s 0.
 
-            double Positive = 5;
+            double Positive = 5.0D;
             Console.WriteLine(Positive/0);
-            double negaive = -5;
+            double negaive = -5.0D;
             Console.WriteLine(negaive/0);
 
 
