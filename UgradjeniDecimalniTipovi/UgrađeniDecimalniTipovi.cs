@@ -8,7 +8,7 @@
 
             // Primjer utjecaja ograničene preciznosti na rezultat oduzimanja/zbrajanja
             // TODO:031 Definirati tri varijable f1, f2 i f3 tipa float s vrijednostima: 1234567890, 1234567990 i 9.
-            float f1 = 
+            //float f1 = 
             // TODO:032 Ispisati razlike (f1-f2), odn. (f1-f3) (pomoću formata "{0:F2}" osigurati ispis svih znamenki) i provjeriti točnost ispisa.
 
             // Primjer binarnog zaokruživanja na rezultat:
