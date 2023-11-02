@@ -37,7 +37,7 @@
             Console.ReadKey();
         }
 
-        // TODO:111 Pogledati donje pretvorbe i razjasniti razliku.
+        // 111 Pogledati donje pretvorbe i razjasniti razliku.
 
         // ovo je česti način pisanja kada želimo napraviti "sigurnu" pretvorbu:
         static void Pretvorba1()
