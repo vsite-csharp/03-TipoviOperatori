@@ -31,10 +31,10 @@ namespace Vsite.CSharp.TipoviOperatori
             var f = a + b;
             Console.WriteLine(f.GetType());
 
-            // TODO:044 Definirati varijablu tipa decimal i ispisati zbroj s varijablom tipa double te provjeriti kakvog tipa je taj zbroj.
+            // 044 Definirati varijablu tipa decimal i ispisati zbroj s varijablom tipa double te provjeriti kakvog tipa je taj zbroj.
 
             decimal y = 0.55M;
-            var x = a + y;
+            var x = (decimal)a + y;
             Console.WriteLine(x.GetType());
 
 
