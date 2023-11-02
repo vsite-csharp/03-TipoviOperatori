@@ -30,7 +30,7 @@
             Osoba osobaStudent = new Student();
             osobaStudent.DajOib();
             // 082 Pokušajte objektu student pridružiti novi objekt tipa Osoba. Provjerite što prevoditelj javlja.
-            Student stu1 = new Osoba();
+            //Student stu1 = new Osoba();
 
             //Console.ReadKey();
         }
