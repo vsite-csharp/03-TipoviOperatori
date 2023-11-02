@@ -48,10 +48,10 @@
             nuklFizičar.Hodaj();
             nuklFizičar.NapraviBombu();
 
-            novaOsoba = osoba;
-            nuklFizičar = (NuklearniFizičar)novaOsoba;
-            nuklFizičar.Hodaj();
-            nuklFizičar.NapraviBombu();
+            //novaOsoba = osoba;
+            //nuklFizičar = (NuklearniFizičar)novaOsoba;
+            //nuklFizičar.Hodaj();
+            //nuklFizičar.NapraviBombu();
 
 
             Console.ReadKey();
