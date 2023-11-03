@@ -28,7 +28,7 @@
             s.a = 15;
             s.b = 2.76;
             // :068 Napisati naredbu za postavljanje vrijednosti npostojećeg polja c u toj strukturi na proizvoljnu vrijednosti i provjeriti da li se kod može prevesti.
-            s.c = 13;
+            //s.c = 13;
             Console.ReadKey();
         }
     }
