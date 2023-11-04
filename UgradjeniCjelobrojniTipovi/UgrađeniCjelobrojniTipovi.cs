@@ -30,7 +30,7 @@
             // 025 Deklarirati varijablu tipa int i dodijeliti joj vrijednost int.MaxValue. Ispisati vrijednost varijable uvećane za 1.
 
             int i2 = int.MaxValue;
-            Console.WriteLine(int.MaxValue + 1);
+            //Console.WriteLine(int.MaxValue + 1);
             Console.WriteLine($"Rezultat:{i2+1}");
 
             // 026 Deklarirati varijablu tipa int i dodijeliti joj vrijednost int.MinValue. Ispisati vrijednost varijable umanjenu za 1.
