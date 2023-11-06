@@ -12,7 +12,7 @@ namespace Vsite.CSharp.TipoviOperatori
     {
         static void Main()
         {
-            // TODO:110 Pokrenuti program i provjeriti što će se ispisati te koja će iznimka biti bačena.
+            // 110 Pokrenuti program i provjeriti što će se ispisati te koja će iznimka biti bačena.
             Osoba janko = new Student();
             Student jankoStudent = janko as Student;
             if (jankoStudent != null)
@@ -39,7 +39,7 @@ namespace Vsite.CSharp.TipoviOperatori
             Console.ReadKey();
         }
 
-        // TODO:111 Pogledati donje pretvorbe i razjasniti razliku.
+        // 111 Pogledati donje pretvorbe i razjasniti razliku.
 
         // ovo je česti način pisanja kada želimo napraviti "sigurnu" pretvorbu:
         static void Pretvorba1()
@@ -55,6 +55,7 @@ namespace Vsite.CSharp.TipoviOperatori
 
         // ovo je efikasniji način pisanja kada želimo napraviti "sigurnu" pretvorbu:
         // (pogledati i usporediti generirani IL kod za obje metode)
+        
         static void Pretvorba2()
         {
             Osoba janko = new Student();
@@ -64,5 +65,6 @@ namespace Vsite.CSharp.TipoviOperatori
             {
             }
         }
+        // razlika je u tome sto u Pretvorba1 koristimo IS, a u Pretvorba2 koristimo AS operator 
     }
 }
