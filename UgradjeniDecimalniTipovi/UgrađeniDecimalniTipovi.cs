@@ -13,7 +13,7 @@
 
             // Primjer binarnog zaokruživanja na rezultat:
             // TODO:033 Definirati dvije varijable: trećina1 i trećina2, tipa double s vrijednostima koje se izračunavaju pomoću izraza 1/3, odn. (1-2/3). Voditi računa da dijeljenje u tim izrazima ne bude cjelobrojno!
-            
+
             // TODO:034 Ispisati vrijednosti varijabli trećina1 i trećina2 te njihove razlike (trećina1-trećina1), odn. (trećina1-tećina2).
 
             // Primjer utjecaja ograničenog raspona na rezultat množenja i dijeljenja:
@@ -28,7 +28,7 @@
 
             // TODO:039 Varijabli tipa int pridružiti vrijednost prethodno definirane varijable i ispisati njenu vrijednost.
 
-            Console.ReadKey();
+            Console.WriteLine("GOTOVO!!!");
         }
     }
 }

@@ -20,7 +20,7 @@
 
             // TODO:074 Pokrenuti program i provjeriti ispis.
 
-            Console.ReadKey();
+            Console.WriteLine("GOTOVO!!!");
         }
     }
 }

@@ -14,7 +14,7 @@
 
             // TODO:044 Definirati varijablu tipa decimal i ispisati zbroj s varijablom tipa double te provjeriti kakvog tipa je taj zbroj.
 
-            Console.ReadKey();
+            Console.WriteLine("GOTOVO!!!");
         }
     }
 }

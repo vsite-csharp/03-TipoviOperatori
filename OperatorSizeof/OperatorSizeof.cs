@@ -43,7 +43,7 @@
             // TODO:124 Ispisati duljinu tipa MojaKlasa
 
 
-            Console.ReadKey();
+            Console.WriteLine("GOTOVO!!!");
         }
     }
 }

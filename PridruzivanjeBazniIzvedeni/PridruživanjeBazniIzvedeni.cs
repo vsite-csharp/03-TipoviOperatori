@@ -31,7 +31,7 @@
             // TODO:082 Pokušajte objektu student pridružiti novi objekt tipa Osoba. Provjerite što prevoditelj javlja.
 
 
-            Console.ReadKey();
+            Console.WriteLine("GOTOVO!!!");
         }
     }
 }

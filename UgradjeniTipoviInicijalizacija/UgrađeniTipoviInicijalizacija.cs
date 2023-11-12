@@ -14,7 +14,7 @@
 
             // TODO:014 Napisati kod koji inicijalizira novu varijablu tipa string na vrijednost "string 1".
 
-            Console.ReadKey();
+            Console.WriteLine("GOTOVO!!!");
         }
     }
 }

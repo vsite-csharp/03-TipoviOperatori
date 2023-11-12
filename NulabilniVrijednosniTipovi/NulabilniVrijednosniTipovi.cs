@@ -25,7 +25,7 @@ namespace Vsite.CSharp.TipoviOperatori
 
             // TODO:053 Ponovno pokušati pridružiti varijabli običniDuplić vrijednost varijable nulabilniDuplić.
 
-            
+
             // TODO:054 Otkomentirati donje naredbe, provjeriti prevodi li se kod, pogledati upozorenja te pokrenuti program i provjeriti ispis.
             // TODO:055 Deklarirati mk da je nulabilni tip te ponoviti gornje korake.
             // TODO:056 Ispred drugog poziva za ispis dodati provjeru je li mk inicijaliziran te ispis napraviti samo u tom slučaju.
@@ -37,7 +37,7 @@ namespace Vsite.CSharp.TipoviOperatori
 
             //Console.WriteLine(mk.a);
 
-            Console.ReadKey();
+            Console.WriteLine("GOTOVO!!!");
         }
     }
 }

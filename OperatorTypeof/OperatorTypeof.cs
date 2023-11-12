@@ -28,7 +28,7 @@ namespace Vsite.CSharp.TipoviOperatori
             object o = new object();
             Console.WriteLine($"*** Svi članovi instance klase {o.GetType().Name} ***");
 
-            Console.ReadKey();
+            Console.WriteLine("GOTOVO!!!");
         }
     }
 }

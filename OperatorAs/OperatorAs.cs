@@ -34,7 +34,7 @@
                 Console.WriteLine(e.Message);
             }
 
-            Console.ReadKey();
+            Console.WriteLine("GOTOVO!!!");
         }
 
         // TODO:111 Pogledati donje pretvorbe i razjasniti razliku.

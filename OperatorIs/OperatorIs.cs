@@ -16,7 +16,7 @@
             Osoba janko = new Student();
 
 
-            Console.ReadKey();
+            Console.WriteLine("GOTOVO!!!");
         }
     }
 }

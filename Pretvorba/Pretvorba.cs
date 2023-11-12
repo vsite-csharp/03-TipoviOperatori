@@ -21,8 +21,8 @@
     {
         static void Main()
         {
-            Osoba osoba = new Osoba();
-            NuklearniFizičar nuklFizičar = new NuklearniFizičar();
+            var osoba = new Osoba();
+            var nuklFizičar = new NuklearniFizičar();
 
             // TODO:090 Dodati pozive svih mogućih metoda za objekte osoba i nuklFizičar, pokrenuti program i provjeriti rezultat izvođenja.
 
@@ -31,7 +31,7 @@
             // TODO:091 Dodati pozive svih mogućih metoda za objekt osobaNuklFiz, pokrenuti program i provjeriti rezultat.
 
             // TODO:092 Provjeriti koja su od donjih pridruživanja dozvoljena. Modificirajte naredbe tako da prevoditelj ne prijavljuje pogreške.
-            //osobaNuklFiz = nuklFiz;
+            //osobaNuklFiz = nuklFizičar;
             //nuklFizičar = osobaNuklFiz;
 
             // TODO:093 Dodati naredbu koja će omogućiti da se na objektu osobaNuklFiz pozove metoda NapraviBombu, pokrenuti program i provjeriti rezultat izvođenja.
@@ -49,7 +49,7 @@
             //nuklFizičar.NapraviBombu();
 
 
-            Console.ReadKey();
+            Console.WriteLine("GOTOVO!!!");
         }
     }
 }
