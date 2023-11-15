@@ -32,15 +32,22 @@
     {
         static void Main()
         {
-            // TODO:120 Napisati naredbu kojom će se ispisati duljina podatka tipa decimal 
+            // :120 Napisati naredbu kojom će se ispisati duljina podatka tipa decimal 
+            Console.WriteLine(sizeof(decimal));
+            // :121 Napisati naredbu kojom će se ispisati duljina podatka tipa double 
+            Console.WriteLine(sizeof(double));
 
-            // TODO:121 Napisati naredbu kojom će se ispisati duljina podatka tipa double 
+            unsafe
+            {
+                // :122 Ispisati duljinu tipa MojaStruktura
+                Console.WriteLine(sizeof(MojaStruktura));
 
-            // TODO:122 Ispisati duljinu tipa MojaStruktura
+                // :123 Ispisati duljinu tipa MojaSloženaStruktura
+                Console.WriteLine(sizeof(MojaSloženaStruktura));
 
-            // TODO:123 Ispisati duljinu tipa MojaSloženaStruktura
-
-            // TODO:124 Ispisati duljinu tipa MojaKlasa
+                // :124 Ispisati duljinu tipa MojaKlasa
+                Console.WriteLine(sizeof(MojaKlasa));
+            }
 
 
             Console.ReadKey();
